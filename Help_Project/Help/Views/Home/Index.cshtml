@@ -1,8 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="panel-container">
+    <div class="panel-left">
+        <div class="serach-div" title="Search">
+</div>
+        <hr class=" hr-sidebar">
+        <div class="categury_div text-center">
+            <select title="Categury" id="Tab_selection" class="select-style">
+                <option value="Tester">Tester AMT105</option>
+                <option value="Relay">Relay AMR</option>
+                <option value="WhatsNew">Whats New</option>
+                <option value="WorkOrder">Work Order</option>
+            </select>
+            <select title="WhatsNew Sort by" name="selector_whatsnew" id="wathsnew_dropdown" class="select-style" disabled>
+                <option id="Title" value="Title" selected>Title</option>
+                <option id="Version" value="Version">Version</option>
+                <option id="BugOptions" value="BugOptions">Bugs & Options</option>
+            </select>
+        </div>
+        <figure id="tabfigure" class="tabBlock disable-select ">
+            <div id="tabBlock-content" class="tabBlock-content">
+                @await Component.InvokeAsync("Contant_Tester")
+            </div>
+        </figure>
+    </div>
+    <div class="splitter"></div>
+    <div class="panel-right">
+        <content style="background-color: #ffffff" id="content">
+            <partial name="Partial_veiw/defualt"/>
+        </content>
+    </div>
+    <div class="clearfix"></div>
 </div>

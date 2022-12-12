@@ -1,48 +1,84 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Help</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vebko</title>
+    <!-- icon title -->
+    <link rel="icon" href="~/asset/Image/Vebko_EN.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="~/asset/CSS/Bootstrapv4.3.1.css" rel="stylesheet">
+    <!-- Custom styles-->
+    <link href="~/asset/CSS/Styles_LTR_V1.0.css" rel="stylesheet">
+    <!--Defult style-->
+    <link href="~/asset/CSS/defult_page.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="~/asset/Fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Help</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<header class="heading_style" style="font-family: Robot !important; overflow: hidden !important; height: 100% !important; border: 3px solid black;">
+    <!-- navbar -->
+    <div class="NavbarCustomeHelp">
+        <ul class="menu-help">
+            <li class="menu-help_li">
+                <button type="button" title="Close/Open Menu" class="menu-Button" id="Btn-Col-Sidebar">
+                    <img src="~/asset/Image/sidebar.png" width="35px" height="30px">
+                    <span id="txt_sh-hi" class="menu-Button-text">Close</span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="menu-help_li">
+                <button id="Btn-printer" title="Print" type="button" class="menu-Button" data-toggle="modal" data-target="#printpopup">
+                    <img src="~/asset/Image/printer.png" width="35px" height="30px">
+                    <span class="menu-Button-text">Print</span>
+                </button>
+            </li>
+            <li class="menu-help_li">
+                <button id="Btn-PDF" title="Donwload PDF" type="button" class="menu-Button" data-toggle="modal" data-target="#dowloadpopup">
+                    <img src="~/asset/Image/download-pdf.png" width="35px" height="30px">
+                    <span class="menu-Button-text">PDF</span>
+                </button>
+            </li>
+            <li class="menu-help_li li-hr">
+                <div class="v-line">
+                </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <li class="menu-help_li" title="Language">
+                <div id class="lang_div">
+                    <span>
+                        <img src="~/asset/Image/world.png" width="30px" height="30px">
+                    </span>
+                    <select id="lang_Help" class="select-style">
+                        <option value="English" selected=selected>English</option>
+                        <option value="Persian">Persian</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="Arabic">Arabic</option>
+                    </select>
+                </div>
                         </li>
+            <div class="log-in-menu">
+                <img src="~/asset/Image/Vebko_EN_Log.png" class="image_log">
+            </div>
                     </ul>
                 </div>
-            </div>
-        </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+<div>
             @RenderBody()
-        </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 1401 - Help - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+<!-- Bootstrap core JavaScript -->
+<script src="asset/JS/jquery.js"></script>
+<script src="~/asset/JS/jquery-2.1.1.min.js"></script>
+<script src="~/asset/JS/bootstrap.min.js"></script>
+<script src="~/asset/JS/popper.js"></script>
+<script src="~/asset/JS/jquery_resizable_LTR.js"></script>
+<script src="~/asset/JS/jsResize_LTR_V1.0.js"></script>
+@* <script src="~/asset/JS/jsfileV1.0.js"></script> *@
+<script src="~/asset/JS/jspdf.umd.min.js"></script>
 </body>
 </html>
