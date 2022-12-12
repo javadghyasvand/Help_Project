@@ -20,7 +20,7 @@
     <link href="~/asset/Fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-<header class="heading_style" style="font-family: Robot !important; overflow: hidden !important; height: 100% !important; border: 3px solid black;">
+<header class="heading_style">
     <!-- navbar -->
     <div class="NavbarCustomeHelp">
         <ul class="menu-help">
@@ -45,40 +45,40 @@
             <li class="menu-help_li li-hr">
                 <div class="v-line">
                 </div>
-                        </li>
+            </li>
             <li class="menu-help_li" title="Language">
                 <div id class="lang_div">
                     <span>
-                        <img src="~/asset/Image/world.png" width="30px" height="30px">
+                        <img src="~/asset/Image/world.png" width="30px" height="30px"> #
                     </span>
                     <select id="lang_Help" class="select-style">
                         <option value="English" selected=selected>English</option>
-                        <option value="Persian">Persian</option>
-                        <option value="German">German</option>
+                        <option value="Persian">Persian</option> <option value="German">German</option>
                         <option value="Spanish">Spanish</option>
                         <option value="French">French</option>
                         <option value="Arabic">Arabic</option>
                     </select>
                 </div>
-                        </li>
+            </li>
             <div class="log-in-menu">
                 <img src="~/asset/Image/Vebko_EN_Log.png" class="image_log">
             </div>
-                    </ul>
-                </div>
-    </header>
-<div>
-            @RenderBody()
+        </ul>
     </div>
+</header>
+<div class="contant_style">
+    @RenderBody()
+</div>
 
 <!-- Bootstrap core JavaScript -->
+
 <script src="asset/JS/jquery.js"></script>
 <script src="~/asset/JS/jquery-2.1.1.min.js"></script>
 <script src="~/asset/JS/bootstrap.min.js"></script>
 <script src="~/asset/JS/popper.js"></script>
 <script src="~/asset/JS/jquery_resizable_LTR.js"></script>
 <script src="~/asset/JS/jsResize_LTR_V1.0.js"></script>
-@* <script src="~/asset/JS/jsfileV1.0.js"></script> *@
+<script src="~/asset/JS/jsfileV1.0.js"></script>
 <script src="~/asset/JS/jspdf.umd.min.js"></script>
 </body>
 </html>

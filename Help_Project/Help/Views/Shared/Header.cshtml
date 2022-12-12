@@ -1,0 +1,49 @@
+﻿@model Header_Contant
+<header>
+    <!-- navbar -->
+    <div class="NavbarCustomeHelp">
+        <ul class="menu-help">
+            <li class="menu-help_li">
+                <button type="button" title="Close/Open Menu" class="menu-Button" id="Btn-Col-Sidebar">
+                    <img src="~/asset/Image/sidebar.png" width="35px" height="30px">
+                    <span id="txt_sh-hi" class="menu-Button-text">@Model.btn_Close</span>
+                </button>
+            </li>
+            <li class="menu-help_li">
+                <button id="Btn-printer" title="Print" type="button" class="menu-Button" data-toggle="modal" data-target="#printpopup">
+                    <img src="~/asset/Image/printer.png" width="35px" height="30px">
+                    <span class="menu-Button-text">@Model.Btn_Print</span>
+                </button>
+            </li>
+            <li class="menu-help_li">
+                <button id="Btn-PDF" title="Donwload PDF" type="button" class="menu-Button" data-toggle="modal" data-target="#dowloadpopup">
+                    <img src="~/asset/Image/download-pdf.png" width="35px" height="30px">
+                    <span class="menu-Button-text">@Model.Btn_Download</span>
+                </button>
+            </li>
+            <li class="menu-help_li li-hr">
+                <div class="v-line">
+                </div>
+            </li>
+            <li class="menu-help_li" title="Language">
+                <div id class="lang_div">
+                    <span>
+                        <img src="~/asset/Image/world.png" width="30px" height="30px">
+                    </span>
+                    <select id="lang_Help" class="select-style">
+                        
+                        <option value="English" selected=selected>@Model.Select_lang</option>
+                        <option value="Persian">Persian</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="Arabic">Arabic</option>
+                    </select>
+                </div>
+            </li>
+            <div class="log-in-menu">
+                <img src="~/asset/Image/Vebko_EN_Log.png" class="image_log">
+            </div>
+        </ul>
+    </div>
+</header>
