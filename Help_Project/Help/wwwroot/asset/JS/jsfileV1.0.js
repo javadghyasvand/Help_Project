@@ -596,7 +596,6 @@ function dispalyContanet(element) {
         $("#wathsnew_dropdown").attr("disabled", "disabled");
     }
 }
-
 function page_iframe_display(existetag, content) {
     var width_screen = window.screen.width
     if (width_screen <= "750") {
