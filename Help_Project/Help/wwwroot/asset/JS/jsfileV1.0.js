@@ -1,4 +1,4 @@
-// Menu List Open Cloase  
+ //Menu List Open Cloase  
 $('#tabfigure .sub-menu > a').click(function() {
     var last = $('.sub-menu.open', $('#sidebar'));
     last.removeClass("open");
@@ -19,7 +19,7 @@ $('#tabfigure .sub-menu > a').click(function() {
         sub.slideDown(200);
     }
 });
-// content list show hide
+ //content list show hide
 $('#Tab_selection').change(function() {
     switch ($(this).val()) {
         case "Tester":
@@ -47,7 +47,7 @@ $('#Tab_selection').change(function() {
             break;
     }
 });
-// whats new sort
+ //whats new sort
 $("#wathsnew_dropdown").change(function(e) {
     $("#contant-Tester").addClass("none-display");
     $("#contant-Relay").addClass("none-display");
@@ -67,11 +67,11 @@ $("#wathsnew_dropdown").change(function(e) {
             break;
     }
 });
-// colapse sidbar
+ //colapse sidbar
 $("#Btn-Col-Sidebar").click(function(e) {
     Sidbar_Steate();
 });
-// Download Manual
+ //Download Manual
 function downloadFile_AMT_Manual() {
     var src = document.getElementById("download-tester").getAttribute("src");
     var link = document.createElement('a');
@@ -155,78 +155,78 @@ function downloadFile_Work_Order() {
         link.click();
     }
 }
-// select languge
-//$("#lang_Help").change(function(e) {
-//    let FullLocation = $("#curentpage").attr("name");
-//    if (FullLocation.search("page") <= 0) {
-//        switch ($("#lang_Help").val()) {
-//            case "English":
-//                window.location.href = "index.html";
-//                break;
-//            case "Persian":
-//                window.location.href = "index_fa.html";
-//                break;
-//            case "German":
-//                window.location.href = "index_ge.html";
-//                break;
-//            case "Spanish":
-//                window.location.href = "index_sp.html";
-//                break;
-//            case "French":
-//                window.location.href = "index_fr.html";
-//                break;
-//            case "Arabic":
-//                window.location.href = "index_ar.html";
-//                break;
-//        }
-//    } else {
-//        switch ($("#lang_Help").val()) {
-//            case "English":
-//                var cheang_to = "EN"
-//                var FullLocation_arry = FullLocation.split("page=");
-//                var lng_select = FullLocation_arry[1].split("\\");
-//                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
-//                window.location.href = Dirctory_edit_Name;
-//                break;
-//            case "Persian":
-//                var cheang_to = "FA"
-//                var FullLocation_arry = FullLocation.split("page=");
-//                var lng_select = FullLocation_arry[1].split("\\");
-//                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
-//                window.location.href = Dirctory_edit_Name;
-//                break;
-//            case "German":
-//                var cheang_to = "GE"
-//                var FullLocation_arry = FullLocation.split("page=");
-//                var lng_select = FullLocation_arry[1].split("\\");
-//                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
-//                window.location.href = Dirctory_edit_Name;
-//                break;
-//            case "Spanish":
-//                var cheang_to = "ES"
-//                var FullLocation_arry = FullLocation.split("page=");
-//                var lng_select = FullLocation_arry[1].split("\\");
-//                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
-//                window.location.href = Dirctory_edit_Name;
-//                break;
-//            case "French":
-//                var cheang_to = "FR"
-//                var FullLocation_arry = FullLocation.split("page=");
-//                var lng_select = FullLocation_arry[1].split("\\");
-//                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
-//                window.location.href = Dirctory_edit_Name;
-//                break;
-//            case "Arabic":
-//                var cheang_to = "AR"
-//                var FullLocation_arry = FullLocation.split("page=");
-//                var lng_select = FullLocation_arry[1].split("\\");
-//                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
-//                window.location.href = Dirctory_edit_Name;
-//                break;
-//        }
-//    }
-//});
-// Search
+ //select languge
+$("#lang_Help").change(function(e) {
+    let FullLocation = $("#curentpage").attr("name");
+    if (FullLocation.search("page") <= 0) {
+        switch ($("#lang_Help").val()) {
+            case "English":
+                window.location.href = "index.html";
+                break;
+            case "Persian":
+                window.location.href = "index_fa.html";
+                break;
+            case "German":
+                window.location.href = "index_ge.html";
+                break;
+            case "Spanish":
+                window.location.href = "index_sp.html";
+                break;
+            case "French":
+                window.location.href = "index_fr.html";
+                break;
+            case "Arabic":
+                window.location.href = "index_ar.html";
+                break;
+        }
+    } else {
+        switch ($("#lang_Help").val()) {
+            case "English":
+                var cheang_to = "EN"
+                var FullLocation_arry = FullLocation.split("page=");
+                var lng_select = FullLocation_arry[1].split("\\");
+                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
+                window.location.href = Dirctory_edit_Name;
+                break;
+            case "Persian":
+                var cheang_to = "FA"
+                var FullLocation_arry = FullLocation.split("page=");
+                var lng_select = FullLocation_arry[1].split("\\");
+                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
+                window.location.href = Dirctory_edit_Name;
+                break;
+            case "German":
+                var cheang_to = "GE"
+                var FullLocation_arry = FullLocation.split("page=");
+                var lng_select = FullLocation_arry[1].split("\\");
+                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
+                window.location.href = Dirctory_edit_Name;
+                break;
+            case "Spanish":
+                var cheang_to = "ES"
+                var FullLocation_arry = FullLocation.split("page=");
+                var lng_select = FullLocation_arry[1].split("\\");
+                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
+                window.location.href = Dirctory_edit_Name;
+                break;
+            case "French":
+                var cheang_to = "FR"
+                var FullLocation_arry = FullLocation.split("page=");
+                var lng_select = FullLocation_arry[1].split("\\");
+                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
+                window.location.href = Dirctory_edit_Name;
+                break;
+            case "Arabic":
+                var cheang_to = "AR"
+                var FullLocation_arry = FullLocation.split("page=");
+                var lng_select = FullLocation_arry[1].split("\\");
+                var Dirctory_edit_Name = select_lng_replace(FullLocation, lng_select[2], cheang_to);
+                window.location.href = Dirctory_edit_Name;
+                break;
+        }
+    }
+});
+ //Search
 function SearchFunction() {
     var searchString = $("#searchbox").val();
     if ($("#searchbox").val() == "" || searchString == null || searchString == "") {
@@ -284,149 +284,7 @@ function SearchFunction() {
         }
     }
 }
-
-
-$(document).ready(function() {
-    $('.newpage').click(function(e) {
-        var url = $(this).attr("name");
-        var Pages = url.search("WhatsNew_VR");
-        var width_screen = window.screen.width
-        if (width_screen <= "750") {
-            Sidbar_Steate();
-        }
-        if ($("#searchbox").val() == "" || $("#searchbox").val() == null || $("#searchbox").val() == "") {
-            if ($("a.newpage").hasClass("li_select") == true) {
-                $("a.newpage").removeClass("li_select");
-                $("a.newpage").removeClass("li_select");
-            }
-        }
-        $(this).addClass("li_select");
-        if (Pages != "-1") {
-            url = $(this).attr("name") + '.htm';
-            hrefurl = url.replace(/ /g, "%20");
-            var splitlocation = window.location.href.split("?page")[0].replace("#", "")
-            var findId = $(this).attr("findId").trim();
-            $("#curentpage").remove();
-            $('<div id="curentpage" name=' + splitlocation + "?page=" + hrefurl + "#" + findId + ' class="curentpage"></div>').appendTo('body');
-            document.getElementById("content").innerHTML = '<iframe id="printarea" src="' + url + '"  style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe>';
-            var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + "?page=" + hrefurl
-            window.history.pushState({ path: refresh }, '', refresh);
-        } else {
-            url = $(this).attr("name") + '.htm';
-            hrefurl = url.replace(/ /g, "%20");
-            var splitlocation = window.location.href.split("?page")[0].replace("#", "")
-            $("#curentpage").remove();
-            $('<div id="curentpage" name=' + splitlocation + "?page=" + hrefurl + ' class="curentpage"></div>').appendTo('body');
-
-            document.getElementById("content").innerHTML = '<iframe id="printarea" src="' + url + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-            var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + "?page=" + hrefurl
-            window.history.pushState({ path: refresh }, '', refresh);
-
-
-        }
-    });
-});
-// onload page
-$(window).on("load", function() {
-    var lastquery = window.document.location.href
-    if (lastquery.search("page") != "-1") {
-        var stringqery = window.location.href
-        var stringqery_arry = stringqery.split("page=");
-        var stringqery_arry_dirctory_call = stringqery_arry[1].replaceAll("/", "\\");
-        stringqery_arry_dirctory_call = stringqery_arry_dirctory_call.split("\\");
-        if (stringqery_arry_dirctory_call[1] == "WhatsNew_VR") {
-            var splitqury = stringqery.split("page=");
-            var idinstrinquery = stringqery.split("\\");
-            var id = idinstrinquery[4].split("Version.htm#")
-            if (id[1] == "") {
-                var sub_menu_Id = id[0].substring(4);
-                sub_menu_Id = sub_menu_Id.substring(0, sub_menu_Id.length - 4);
-                sub_menu_Id = sub_menu_Id + "-sub-menu";
-                sub_menu_Id = sub_menu_Id.replace("_", " ");
-                var existetag = document.getElementById(sub_menu_Id);
-
-            } else {
-                var existetag = document.getElementById(id[1]);
-            }
-        } else {
-            var id = stringqery_arry_dirctory_call[4].replace(".htm", "");
-            id = id.replace("#", "");
-            var existetag = document.getElementById(id);
-        }
-        if (existetag != "null") {
-            switch (stringqery_arry_dirctory_call[1]) {
-                case "Tester":
-                    dispalyContanet("Tester");
-                    page_iframe_display(existetag, "Tester")
-                    break;
-                case "Relay":
-                    dispalyContanet("Relay");
-                    page_iframe_display(existetag, "Relay")
-                    break;
-                case "WorkOrder":
-                    dispalyContanet("WorkOrder");
-                    page_iframe_display(existetag, "WorkOrder")
-                    break;
-                case "WhatsNew_DA":
-                    dispalyContanet("WhatsNew_DA");
-                    page_iframe_display(existetag, "WhatsNew_DA")
-                    break;
-                case "WhatsNew_VR":
-                    dispalyContanet("WhatsNew_VR");
-                    page_iframe_display(existetag, "WhatsNew_VR")
-                    break;
-                case "WhatsNew_BO":
-                    dispalyContanet("WhatsNew_BO");
-                    page_iframe_display(existetag, "WhatsNew_BO")
-                    break;
-            }
-        }
-    } else {
-        $("#curentpage").remove();
-        $('<div id="curentpage" name=' + lastquery + ' class="curentpage"></div>').appendTo('body');
-        var DefaultPage;
-        var width_screen = window.screen.width
-        var Loc_String = String(window.document.location.href);
-        GetQueryString(Loc_String)
-        DefaultPage = GetQueryString("page");
-        if (width_screen <= "750") {
-            if (DefaultPage == null || DefaultPage == " ") {
-                DefaultPage = escape("default.html");
-                document.getElementById("content").innerHTML = '<iframe id="printarea" type="text/html" src="' + DefaultPage + '" onload=""  style="width: 100%;height: 100%; "></iframe>';
-                if (!$(".panel-left").hasClass("none-display") == true) {
-                    $(".panel-left").addClass("none-display");
-                    $(".splitter").addClass("none-display");
-                    switch ($("#lang_Help option:selected").val()) {
-                        case "English":
-                            $("#txt_sh-hi").text("Show");
-                            break;
-                        case "German":
-                            $("#txt_sh-hi").text("zeigen");
-                            break;
-                        case "Spanish":
-                            $("#txt_sh-hi").text("MOSTRAR");
-                            break;
-                        case "French":
-                            $("#txt_sh-hi").text("montrer");
-                            break;
-                        case "Arabic":
-                            $("#txt_sh-hi").text("عرض");
-                            break;
-                        case "Persian":
-                            $("#txt_sh-hi").text("نمایش");
-                            break;
-                    }
-                }
-            }
-        } else {
-            if (DefaultPage == null || DefaultPage == " ") {
-                DefaultPage = escape("default.html");
-                document.getElementById("content").innerHTML = '<iframe id="printarea" type="text/html" src="' + DefaultPage + '" onload=""  style="width: 100%;height: 100%; "></iframe>';
-            }
-        }
-    }
-});
-// sidbar show/hide
+ //sidbar show/hide
 function Sidbar_Steate() {
     var width_screen = window.screen.width
     if (!$(".panel-left").hasClass("none-display") == true) {
@@ -484,7 +342,7 @@ function Sidbar_Steate() {
         }
     }
 }
-// query string replace 
+ //query string replace 
 function select_lng_replace(FullLocation, lng_select, cheang_to) {
     switch (cheang_to) {
         case "EN":
@@ -555,7 +413,7 @@ function select_lng_replace(FullLocation, lng_select, cheang_to) {
             return Dirctory_edit_Name
     }
 }
-// GetQueryString
+ //GetQueryString
 function GetQueryString(str) {
     var rs = new RegExp("(^|)" + str + "=([^\&]*)(\&|$)", "gi").exec(str),
         tmp;
@@ -596,59 +454,6 @@ function dispalyContanet(element) {
         $("#wathsnew_dropdown").attr("disabled", "disabled");
     }
 }
-function page_iframe_display(existetag, content) {
-    var width_screen = window.screen.width
-    if (width_screen <= "750") {
-        Sidbar_Steate();
-        $(existetag).parent().css("display", "block");
-        $(existetag).children("a.newpage").addClass("li_select");
-        var testtag = $(existetag).attr("id");
-        var url = $(existetag).children("a.newpage").attr("name") + '.htm'.replace(/ /g, "%20");
-        if (url == "undefined.htm") {
-            $("#curentpage").remove();
-            $('<div id="curentpage" name=' + window.location.href + ' class="curentpage"></div>').appendTo('body');
-            document.getElementById("content").innerHTML = '<iframe  id="printarea" src="' + "Page_Not_Found.html" + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-        } else {
-            if (content == "WhatsNew_VR") {
-                $("#curentpage").remove();
-                $('<div id="curentpage" name=' + window.location.href + ' class="curentpage"></div>').appendTo('body');
-                document.getElementById("content").innerHTML = '<iframe  id="printarea" src="' + url + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-                var offset = document.getElementById(testtag).offsetTop
-                $("#contant-WhatsNew_VR").scrollTop(offset - 150);
-            } else {
-                $("#curentpage").remove();
-                $('<div id="curentpage" name=' + window.location.href + ' class="curentpage"></div>').appendTo('body');
-                document.getElementById("content").innerHTML = '<iframe  id="printarea" src="' + url + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-                $("#contant-" + content).scrollTop($('#' + testtag).position().top - 50);
-            }
-        }
-    } else {
-        $(existetag).parent().css("display", "block");
-        $(existetag).children("a.newpage").addClass("li_select");
-        var testtag = $(existetag).attr("id");
-        var url = $(existetag).children("a.newpage").attr("name") + '.htm'.replace(/ /g, "%20");
-        if (url == "undefined.htm") {
-            $("#curentpage").remove();
-
-            $('<div id="curentpage" name=' + window.location.href + ' class="curentpage"></div>').appendTo('body');
-            document.getElementById("content").innerHTML = '<iframe  id="printarea" src="' + "Page_Not_Found.html" + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-        } else {
-            if (content == "WhatsNew_VR") {
-                $("#curentpage").remove();
-                $('<div id="curentpage" name=' + window.location.href + ' class="curentpage"></div>').appendTo('body');
-                document.getElementById("content").innerHTML = '<iframe  id="printarea" src="' + url + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-                var offset = document.getElementById(testtag).offsetTop
-                $("#contant-WhatsNew_VR").scrollTop(offset - 150);
-            } else {
-                $("#curentpage").remove();
-                $('<div id="curentpage" name=' + window.location.href + ' class="curentpage"></div>').appendTo('body');
-                document.getElementById("content").innerHTML = '<iframe  id="printarea" src="' + url + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-                $("#contant-" + content).scrollTop($('#' + testtag).position().top - 50);
-            }
-        }
-    }
-}
-
 function search_value(valu_sender, searchString) {
     if (valu_sender == "Search_WhatsNew_VR") {
         $("ul.sub").css("display", "none");
@@ -692,11 +497,6 @@ function search_value(valu_sender, searchString) {
                 var child_list = $(parent_Li_Sub_Menu).children();
                 var imagetag = $(child_list[0]).children();
                 $(imagetag[0]).attr("src", "asset/Image/Open_Book.png");
-
-                var test = document.getElementsByTagName("iframe").printarea
-
-                var test3 = window.frames['iframe'].document.getElementById('printarea')
-            }
         });
     }
 
