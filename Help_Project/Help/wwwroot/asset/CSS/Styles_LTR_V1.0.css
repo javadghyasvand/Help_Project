@@ -2,15 +2,17 @@
     font-family: "Robot";
     src: url("~/asset/Fonts/OpenSans/OpenSans-SemiBold.ttf");
 }
+
 html {
     height: 100%;
     overflow: hidden !important;
 }
+
 body {
     font-family: Robot !important;
     overflow: hidden !important;
     height: 100% !important;
-} 
+}
 
 .height-100 { height: 100% !important; }
 
@@ -31,20 +33,23 @@ body {
 }
 
 /* scroll */
-html::-webkit-scrollbar { width: 10px; }
 
-html ::-webkit-scrollbar-track {
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
     background-color: #ebebeb;
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #19B5B4;
 }
+
 /* nav bar */
+
 .NavbarCustomeHelp {
     border-bottom: 1px solid rgba(131, 131, 131, 0.219);
     height: 50px;
@@ -119,6 +124,7 @@ html::-webkit-scrollbar-thumb {
     background: #F0F0F0;
     color: white;
 }
+
 @media (max-width: 750px) {
     .panel-left {
         flex: 0 0 auto;
@@ -133,6 +139,7 @@ html::-webkit-scrollbar-thumb {
         z-index: 1;
     }
 }
+
 .sarech_label {
     margin: 0 !important;
     padding: 0 !important;
@@ -302,8 +309,7 @@ ul li a span { color: black; }
     width: 100% !important;
     padding-left: 0;
     background-color: #ffffff;
-    overflow-x: scroll
-                      
+    overflow-x: scroll                      
 }
 
 .contant_style {
@@ -323,7 +329,7 @@ ul li a span { color: black; }
     width: 400px;
 }
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
     img {
         max-width: 100%;
         height: auto;
@@ -357,9 +363,7 @@ h3 * {
     font-size: 20px !important;
 }
 
-.Bullet-Star {
-    margin: 0 !important;
-}
+.Bullet-Star { margin: 0 !important; }
 
 h3,
 h4 {
@@ -395,9 +399,7 @@ center > img {
     text-align: right;
 }
 
-    center > img:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
+center > img:hover { box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
 
 center {
     text-align: left;
@@ -412,9 +414,7 @@ center {
     font-weight: 600 !important;
 }
 
-#finder {
-    z-index: 100000000000000000 !important;
-}
+#finder { z-index: 100000000000000000 !important; }
 
 #winchm_template_title > a {
     color: black !important;
@@ -428,19 +428,15 @@ center {
     padding-top: 5px !important;
 }
 
-    #winchm_template_title > a:hover {
-        background-color: #d2eaff !important;
-        border: 2px solid rgba(194, 250, 96, 0.51) !important;
-        transition: background-color 0.5s !important;
-    }
-
-#finderInput {
-    color: black !important;
+#winchm_template_title > a:hover {
+    background-color: #d2eaff !important;
+    border: 2px solid rgba(194, 250, 96, 0.51) !important;
+    transition: background-color 0.5s !important;
 }
 
-#finderCount {
-    padding: auto;
-}
+#finderInput { color: black !important; }
+
+#finderCount { padding: auto; }
 
 .btn,
 .btn-large,
@@ -475,11 +471,11 @@ center {
     border: 2px solid rgba(146, 146, 128, 0.57);
 }
 
-    .btn-circle.btn-xl:hover {
-        background-color: #d2eaff !important;
-        border: 2px solid rgba(194, 250, 96, 0.51) !important;
-        transition: background-color 0.5s !important;
-    }
+.btn-circle.btn-xl:hover {
+    background-color: #d2eaff !important;
+    border: 2px solid rgba(194, 250, 96, 0.51) !important;
+    transition: background-color 0.5s !important;
+}
 
 .btn-circle {
     width: 30px !important;
@@ -501,18 +497,12 @@ center {
     background-color: rgba(156, 154, 154, 0.849);
 }
 
-.td_table {
-    border-left: solid black 3px !important;
-}
+.td_table { border-left: solid black 3px !important; }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 
-.cancelbtn {
-    background-color: #338a3e;
-}
+.cancelbtn { background-color: #338a3e; }
 
 .cancelbtn,
 .deletebtn {
@@ -526,9 +516,7 @@ center {
     color: black;
 }
 
-.deletebtn {
-    background-color: #6ab755;
-}
+.deletebtn { background-color: #6ab755; }
 
 .container-doc {
     padding: 16px;
@@ -552,11 +540,8 @@ center {
 }
 
 @media screen and (max-width: 350px) {
-
     .cancelbtn,
-    .deletebtn {
-        width: 100%;
-    }
+    .deletebtn { width: 100%; }
 }
 
 .Popuplogo {
@@ -603,13 +588,9 @@ center {
     border-width: thin;
 }
 
-input[type="submit"] {
-    display: none !important;
-}
+input[type="submit"] { display: none !important; }
 
-input {
-    width: 100%;
-}
+input { width: 100%; }
 
 input {
     background: none;
@@ -622,13 +603,9 @@ input {
     z-index: 2;
 }
 
-    input:focus {
-        outline: none;
-    }
+input:focus { outline: none; }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 .app {
     max-height: fit-content;
@@ -658,9 +635,7 @@ input {
     transition: top 0.15s ease-out;
 }
 
-    .finder.active {
-        top: 0;
-    }
+.finder.active { top: 0; }
 
 .finder-input {
     flex-grow: 1;
@@ -671,9 +646,7 @@ input {
     outline: none !important;
 }
 
-    .finder-input.not-found {
-        color: #e7353f;
-    }
+.finder-input.not-found { color: #e7353f; }
 
 .btn-finder {
     width: 40px;
@@ -682,10 +655,8 @@ input {
     padding: 0;
 }
 
-    .finder-input,
-    .btn-finder:not(:last-child) {
-        margin-right: 5px;
-    }
+.finder-input,
+.btn-finder:not(:last-child) { margin-right: 5px; }
 
 .finder-count {
     display: -webkit-box;
@@ -707,17 +678,11 @@ input {
     flex-grow: 0;
 }
 
-.highlight {
-    background: #eeb900b8;
-}
+.highlight { background: #eeb900b8; }
 
-    .highlight.active {
-        background: #f09206;
-    }
+.highlight.active { background: #f09206; }
 
-html {
-    overflow-y: scroll;
-}
+html { overflow-y: scroll; }
 
 body {
     padding: 0px;
@@ -757,9 +722,7 @@ body {
     height: auto;
 }
 
-.msocomoff {
-    display: none !important;
-}
+.msocomoff { display: none !important; }
 
 #winchm_template_title {
     font-weight: bold;
@@ -808,50 +771,8 @@ body {
     width: auto;
 }
 
-#winchm_template_navigation a:link {
-    text-decoration: none;
-    color: #0000ff
-}
-
-#winchm_template_navigation a:visited {
-    text-decoration: none;
-    color: #0000ff
-}
-
-#winchm_template_navigation a:active {
-    text-decoration: none;
-    color: #0000ff
-}
-
-#winchm_template_navigation a:hover {
-    text-decoration: none;
-    color: #0000ff
-}
-
-a:link {
-    text-decoration: underline;
-    color: #0033cc
-}
-
-a:visited {
-    text-decoration: underline;
-    color: #0033cc
-}
-
-a:active {
-    text-decoration: underline;
-    color: #0033cc
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #ff0000;
-}
-
 @media print {
-    #winchm_template_button {
-        visibility: hidden;
-    }
+    #winchm_template_button { visibility: hidden; }
 }
 
 #inputmudal::placeholder {
@@ -874,9 +795,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
-    #inputmudal:hover {
-        cursor: pointer;
-    }
+#inputmudal:hover { cursor: pointer; }
 
 .cpy {
     width: 25%;
@@ -888,9 +807,7 @@ a:hover {
     margin-bottom: 20px;
 }
 
-    .cpy:hover {
-        background-color: #3c3f3feb;
-    }
+.cpy:hover { background-color: #3c3f3feb; }
 
 .hidden {
     position: fixed;
@@ -902,9 +819,7 @@ a:hover {
 }
 
 @media print {
-    #winchm_template_button {
-        visibility: hidden;
-    }
+    #winchm_template_button { visibility: hidden; }
 }
 
 
@@ -914,11 +829,11 @@ a:hover {
     box-shadow: 2px 2px 5px rgb(22, 22, 22) !important;
 }
 
-    .cpy:hover {
-        transition: background-color 0.5s, border 0.5s;
-        background-color: #136d6d;
-        border: 3px solid #fff;
-    }
+.cpy:hover {
+    transition: background-color 0.5s, border 0.5s;
+    background-color: #136d6d;
+    border: 3px solid #fff;
+}
 
 #serverstatus {
     color: #fff;
