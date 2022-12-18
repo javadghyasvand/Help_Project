@@ -429,17 +429,9 @@ center {
     margin-left: 6%;
 }
 
-.MsoCommentText {
-    font-size: 11px !important;
-    text-align: justify !important;
-    direction: ltr !important;
-    unicode-bidi: embed !important;
-    font-weight: 600 !important;
-}
-
  #winchm_template_title > a { 
      color: black !important; 
-     border: 2px solid #92929280 !important; 
+     border: 2px solid rgba(146, 146, 128, 0.57) !important; 
      border-radius: 10px !important; 
      padding: 5px !important; 
      background-color: #F0F0F0 !important; 
@@ -800,7 +792,7 @@ center {
      font-weight: bold; 
      margin-left: 3% !important; 
      height: 50px !important; 
-     border: 4px #63a8bc96 groove; 
+     border: 4px rgba(168, 188, 150, 0.39) groove; 
      background-color: #18b5b4; 
      text-align: center; 
      padding: 0.25rem; 
@@ -809,7 +801,9 @@ center {
      margin-bottom: 25px; 
  } 
 
- #inputmudal:hover { cursor: pointer; } 
+ #inputmudal:hover {
+      cursor: pointer;
+ } 
 
  .cpy { 
      width: 25%; 
@@ -821,7 +815,9 @@ center {
      margin-bottom: 20px; 
  } 
 
- .cpy:hover { background-color: #3c3f3feb; } 
+ .cpy:hover {
+      background-color: rgba(63, 63, 235, 0.24);
+ } 
 
  .hidden { 
      position: fixed; 
@@ -874,4 +870,14 @@ center {
      text-align: center; 
      font-weight: bolder; 
      font-size: large; 
- 
+}
+.MsoCommentText {
+    font-size: 10px !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+}
+msocomtxt {
+    font-size: 10px !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+}
