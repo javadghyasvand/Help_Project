@@ -1,7 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home";
+    string Defut_Path = "Partial_veiw/defualt";
+    string Select_Path = "";
 }
-
 <div class="panel-container">
     <div class="panel-left">
         <div class="serach-div" title="Search">
@@ -33,7 +34,15 @@
     <div class="splitter"></div>
     <div class="panel-right">
         <content  id="content">
-            <partial name="Partial_veiw/Tester/A/Assemblying_Stages_of_AMT105_Tester" />
+            @if (!string.IsNullOrEmpty(Select_Path))
+            {
+                <partial name="@Select_Path" />
+            }
+            else
+            {
+                <partial name="@Defut_Path" />
+            }
+          
         </content>
     </div>
 </div>

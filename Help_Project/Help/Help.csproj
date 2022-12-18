@@ -4,12 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Home\Partial_veiw\Tester\A\Assemblying_Stages_of_AMT105_Tester.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Home\Partial_veiw\Tester\A\Assemblying_Stages_of_AMT105_Tester.cshtml" />
-  </ItemGroup>
-
 </Project>

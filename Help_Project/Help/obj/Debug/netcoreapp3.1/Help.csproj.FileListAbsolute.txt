@@ -47,4 +47,10 @@ D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views
 D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Contant_WhatsNew_VR\Contant_WhatsNew_VR.cshtml.g.cs
 D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Components\Contant_WorkOrder\Contant_WorkOrder.cshtml.g.cs
 D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\defualt.cshtml.g.cs
-D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\A\Assemblying_Stages_of_AMT105_Tester.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\A\Assemblying_Stages_of_AMT105_Tester.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\A\Introducing_the_Device_and_Equipment.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\B\How_to_Connect_to_AMT105.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\B\Resetting_IP_Address.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\B\Simultaneous_Connection_of_Several_Testers.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\B\Software_Installation.cshtml.g.cs
+D:\Source\ASP\Help_Project\Help_Project\Help\obj\Debug\netcoreapp3.1\Razor\Views\Home\Partial_veiw\Tester\EN\B\Updating_Firmware_of_Device_Manually.cshtml.g.cs
