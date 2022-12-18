@@ -270,7 +270,7 @@ input {
     width: 100%;
 }
 
-input {
+.clipboard {
     background: none;
     border: 3px solid #fff;
     border-radius: 26px;
@@ -281,9 +281,9 @@ input {
     z-index: 2;
 }
 
-    input:focus {
-        outline: none;
-    }
+.clipboard:focus {
+    outline: none;
+}
 
 * {
     box-sizing: border-box;
