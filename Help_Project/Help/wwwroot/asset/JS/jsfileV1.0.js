@@ -107,17 +107,42 @@ $(document).ready(function () {
             var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + "?page=" + hrefurl
             window.history.pushState({ path: refresh }, '', refresh);
         } else {
-            url = $(this).attr("name") + '.htm';
-            hrefurl = url.replace(/ /g, "%20");
-            var splitlocation = window.location.href.split("?page")[0].replace("#", "")
-            $("#curentpage").remove();
-            $('<div id="curentpage" name=' + splitlocation + "?page=" + hrefurl + ' class="curentpage"></div>').appendTo('body');
-
-            document.getElementById("content").innerHTML = '<iframe id="printarea" src="' + url + '" style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe >';
-            var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + "?page=" + hrefurl
-            window.history.pushState({ path: refresh }, '', refresh);
-
-
+            url = $(this).attr("name");
+            var hdnfldVariable = document.getElementById("value_send_from_Js");
+            var hdnfldVariable = url
         }
     });
 });
+
+
+    $('.newpage').click(function (e) {
+        var url = $(this).attr("name");
+        var Pages = url.search("WhatsNew_VR");
+        var width_screen = window.screen.width
+        if (width_screen <= "750") {
+            Sidbar_Steate();
+        }
+        if ($("#searchbox").val() == "" || $("#searchbox").val() == null || $("#searchbox").val() == "") {
+            if ($("a.newpage").hasClass("li_select") == true) {
+                $("a.newpage").removeClass("li_select");
+                $("a.newpage").removeClass("li_select");
+            }
+        }
+        $(this).addClass("li_select");
+        if (Pages != "-1") {
+            url = $(this).attr("name") + '.htm';
+            hrefurl = url.replace(/ /g, "%20");
+            var splitlocation = window.location.href.split("?page")[0].replace("#", "")
+            var findId = $(this).attr("findId").trim();
+            $("#curentpage").remove();
+            $('<div id="curentpage" name=' + splitlocation + "?page=" + hrefurl + "#" + findId + ' class="curentpage"></div>').appendTo('body');
+            document.getElementById("content").innerHTML = '<iframe id="printarea" src="' + url + '"  style="width: 100%;height: 100%; padding-left:0%;padding-right:0%;margin-left:0%;"></iframe>';
+            var refresh = window.location.protocol + "//" + window.location.host + window.location.pathname + "?page=" + hrefurl
+            window.history.pushState({ path: refresh }, '', refresh);
+        } else {
+            url = $(this).attr("name");
+
+            return url
+
+        }
+    }

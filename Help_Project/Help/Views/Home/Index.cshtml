@@ -1,8 +1,11 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@{
     ViewData["Title"] = "Home";
     string Defut_Path = "Partial_veiw/defualt";
-    string Select_Path = "Partial_veiw/Tester/EN/A/Assemblying_Stages_of_AMT105_Tester";
+    string Select_Path ="Partial_veiw/Tester/EN/A/Assemblying_Stages_of_AMT105_Tester";
+    // string Select_Path = "";
 }
+
 <div class="panel-container">
     <div class="panel-left">
         <div class="serach-div" title="Search">
@@ -42,7 +45,7 @@
             {
                 <partial name="@Defut_Path" />
             }
-          
         </content>
     </div>
 </div>
+

@@ -1,0 +1,254 @@
+﻿<div class="d-none" xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+<link rel=File-List
+href="Updating_Firmware_of_Device_Manually_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="Updating_Firmware_of_Device_Manually_files/editdata.mso">
+
+<title>AMT REFERENCE MANUAL</title>
+
+<link rel=dataStoreItem
+href="Updating_Firmware_of_Device_Manually_files/item0001.xml"
+target="Updating_Firmware_of_Device_Manually_files/props002.xml">
+<link rel=themeData
+href="Updating_Firmware_of_Device_Manually_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Updating_Firmware_of_Device_Manually_files/colorschememapping.xml">
+
+
+
+
+
+
+</div>
+
+
+    <div id="winchm_template_title">
+
+        <a id="playmp4" title="Page Share" data-toggle="modal" data-target="#sharingModal" class="badge"><i
+                class="bi bi-share-fill"></i></a>
+
+        <a class="finder-activator badge" title="Search" data-finder-activator><i class="bi bi-search"></i></a>
+
+        <a data-toggle="tooltip" title="Print" href="#" onClick="PrintElem();" class="badge"><i
+                class="bi bi-printer-fill"></i></a>
+
+        <a id="modalplay" title="Download and Play Video" data-toggle="modal" data-target="#myModal" class="badge"> <i
+                class="bi bi-play-circle-fill"></i></a>
+                
+    </div>
+    <button type="button" onclick="GetTop();" id="toTop" class="btn  btn-circle btn-xl" style="padding:0 !important ;">
+        <i class="bi bi-arrow-up-circle" style="font-size: 25px;font-weight: bolder;">
+        </i>
+    </button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+               <canvas src="~/asset/Image/LOGO_EN.png" class="Popuplogo"></canvas>
+                    <button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-warning text-justify pl-3 pr-3">
+                    <div id="Attention">Attention !</div>
+                    <div class="body-modale-custom">
+                       To download the instructional video, AMPRO software must be running, all instructional videos are saved in a specific path by AMPRO software. Instructional videos are stored in this path 
+                       </br>
+                        <div id="p-addres">
+                            C:\Users\YourUserName\Documents\Vebko\AMPro-HelpFilms
+                        </div>
+                        you can have full access to the videos through this path, note that each video will be playable after the full download and after each download, each video will be played It will be done automatically, if there is a newer video on the vebko.org server,the new video will be downloaded and then made available to you.
+                    </div>
+
+                    <div id="serverstatus" class="serverstatus pl-2">
+                        Server Status :
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-info text-light" data-toggle="tooltip"
+                       href="~/VideoPlayer.html?page=https://vebko.org/Downloads/Instructions/Tester\B_Software Installation & Connection Setting\0017_Software.Introduction.Bootloader_001\0017_Software.Introduction.Bootloader_001_en.mp4"
+                        target="_Blank" rel="noopener noreferrer">
+                        Play online
+                    </a>
+                    <a id="#playmp4" type="button" class="btn btn-success text-light" data-toggle="tooltip"
+                      href="~/VideoPlayer.html?page=https://vebko.org/Downloads/Instructions/Tester\B_Software Installation & Connection Setting\0017_Software.Introduction.Bootloader_001\0017_Software.Introduction.Bootloader_001_en.mp4"
+                        onclick="checkServer()">
+                        Download and play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="sharingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                 <canvas src="~/asset/Image/LOGO_EN.png" class="Popuplogo"></canvas>
+                    <button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify pl-3 pr-3">
+                    <div class="page_link mb-4">Page Link</div>
+                    <div class="row">
+                        <a id="inputmudal" type="url" class="col-11 ur text"
+                            aria-describedby="inputGroup-sizing-defult">https://vebko.org/Downloads/Instructions/ZZ_HELP/index.html?page=Pages\Tester\EN\B\Updating_Firmware_of_Device_Manually.htm</a>
+                        <button class="cpy" title="Copy" onclick="copy('.text')">
+                            <i class="fa fa-clone text-light p-2"></i>
+                        </button>
+                        <input class="clipboard hidden" title="Copy"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="winchm_template_content">
+
+
+
+
+
+
+<div class=WordSection1 dir=RTL>
+
+
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>To update the &quot;Firmware&quot; manually, first,
+it is necessary for the device to be turned off.<span lang=AR-SA dir=RTL
+style='font-size:13.0pt;mso-ansi-font-size:12.0pt;font-family:"B Nazanin"'></span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>Then click on “Disconnect” in the “Preferences”
+screen, so that the software will not send ping to device after the device is
+turned on.<span lang=AR-SA dir=RTL style='font-size:13.0pt;mso-ansi-font-size:
+12.0pt;font-family:"B Nazanin"'></span></p></div>
+
+<div><p class=AAA-Aks dir=RTL><span dir=LTR>
+ <img class="Image_Page"  src="~/Images/Tester/Updating_Firmware_of_Device_Manually_files/image001.png"
+  o:title=""/>
+</span><span lang=DE dir=LTR style='mso-ansi-language:DE'></span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>To get started, the RS232 dongle needs to be
+connected to its specific port on the back of the device Also, the device and
+the laptop must be connected via LAN cable.<span lang=AR-SA dir=RTL
+style='font-size:13.0pt;mso-ansi-font-size:12.0pt;font-family:"B Nazanin"'></span></p></div>
+
+<div><p class=AAA-Aks dir=RTL><span dir=LTR>
+ <img class="Image_Page"  src="~/Images/Tester/Updating_Firmware_of_Device_Manually_files/image002.jpg"
+  o:title=""/>
+<span style='mso-spacerun:yes'> </span></span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>It can be seen that, after the device turns on, the
+&quot;ERROR&quot; light in the front panel of the device starts blinking.<span
+lang=AR-SA dir=RTL style='font-size:13.0pt;mso-ansi-font-size:12.0pt;
+font-family:"B Nazanin"'></span></p></div>
+
+<div><p class=AAA-Aks dir=RTL><span dir=LTR>
+ <img class="Image_Page"  src="~/Images/Tester/Updating_Firmware_of_Device_Manually_files/image003.png"
+  o:title=""/>
+</span><span lang=DE dir=LTR style='mso-ansi-language:DE'></span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>On the main page of the software, click on “Update
+Firmware in Flash Mode<span dir=RTL></span><span dir=RTL></span><span
+lang=AR-SA dir=RTL style='font-size:13.0pt;mso-ansi-font-size:12.0pt;
+font-family:"B Nazanin"'><span dir=RTL></span><span dir=RTL></span>”.</span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>Then, you have to wait for the green bar to get
+filled. After that, a message will be displayed. By clicking on “OK”, you can
+finish updating the “Firmware”.<span lang=AR-SA dir=RTL style='font-size:13.0pt;
+mso-ansi-font-size:12.0pt;font-family:"B Nazanin"'></span></p></div>
+
+<div><p class=AAA-Aks dir=RTL><span dir=LTR>
+ <img class="Image_Page"  src="~/Images/Tester/Updating_Firmware_of_Device_Manually_files/image004.png"
+  o:title=""/>
+</span></p></div>
+
+<p class=AAF-Normal dir=LTR>Turn off the device and unplug the RS232 dongle<span
+dir=RTL></span><span dir=RTL></span><span lang=FA dir=RTL style='font-size:
+10.0pt;mso-ansi-font-size:12.0pt;font-family:"B Nazanin"'><span dir=RTL></span><span
+dir=RTL></span>.</span></p></div>
+
+</div>
+
+<div style='mso-element:comment-list'>
+
+
+
+
+
+<div style='mso-element:comment'>
+
+<div id="_com_1" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_1','_com_1')"
+onmouseout="msoCommentHide('_com_1')"><span style='mso-comment-author:
+"javad ghyasvand";mso-comment-providerid:"Windows Live";mso-comment-userid:
+020b1cd6c1c02935'><a name="_msocom_1"></a></span>
+
+<p class=MsoCommentText dir=RTL><span class=MsoCommentReference><span dir=LTR
+style='font-size:8.0pt'><span style='mso-special-character:comment'>&nbsp;<a
+href="#_msoanchor_1" class=msocomoff>[jg1]</a></span></span></span><span
+dir=LTR>Updating_Firmware_of_Device_Manually</span></p></div>
+
+</div>
+
+</div>
+
+</div>
+
+
+  <script src="~/asset/JS/jquery-2.1.1.min.js"></script>
+  <script src="~/asset/JS/jquery.highlight.js"></script>
+  <script src="~/asset/JS/jquery.scrollto.js"></script>
+  <script src="~/asset/JS/jquery.finder.js"></script>
+  <script src="~/asset/JS/bootstrap.min.js"></script>
+  <script src="~/asset/JS/zooming.js"></script>
+  <script src="~/asset/JS/Defult_page_Js.js"></script>
+
+ <script>
+    const defaultZooming = new Zooming()
+    const customZooming = new Zooming()
+    const config = customZooming.config()
+    const TRANSITION_DURATION_DEFAULT = config.transitionDuration
+    const BG_COLOR_DEFAULT = config.bgColor
+    const SCALE_BASE_DEFAULT = config.scaleBase
+    const ACTIVE_CLASS = 'button-primary'
+    const btnScaleSmall = document.getElementById('btn-scale-small')
+    document.addEventListener('DOMContentLoaded', function () {
+      defaultZooming.listen('img')
+      customZooming.listen('img2')
+    })
+
+    function isActive(el) {
+      return el.classList.contains(ACTIVE_CLASS)
+    }
+    function activate(el) {
+      el.classList.add(ACTIVE_CLASS)
+    }
+    function deactivate(el) {
+      el.classList.remove(ACTIVE_CLASS)
+    }
+    function toggleActive(el) {
+      if (isActive(el)) {
+        deactivate(el)
+        return false
+      } else {
+        activate(el)
+        return true
+      }
+    }
+  </script>
+
+

@@ -1,0 +1,256 @@
+﻿<div class="d-none" xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+<link rel=File-List href="How_to_Connect_to_AMT105_files/filelist.xml">
+<link rel=Edit-Time-Data href="How_to_Connect_to_AMT105_files/editdata.mso">
+
+<title>AMT REFERENCE MANUAL</title>
+
+<link rel=dataStoreItem href="How_to_Connect_to_AMT105_files/item0001.xml"
+target="How_to_Connect_to_AMT105_files/props002.xml">
+<link rel=themeData href="How_to_Connect_to_AMT105_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="How_to_Connect_to_AMT105_files/colorschememapping.xml">
+
+
+
+
+
+
+</div>
+
+
+    <div id="winchm_template_title">
+
+        <a id="playmp4" title="Page Share" data-toggle="modal" data-target="#sharingModal" class="badge"><i
+                class="bi bi-share-fill"></i></a>
+
+        <a class="finder-activator badge" title="Search" data-finder-activator><i class="bi bi-search"></i></a>
+
+        <a data-toggle="tooltip" title="Print" href="#" onClick="PrintElem();" class="badge"><i
+                class="bi bi-printer-fill"></i></a>
+
+        <a id="modalplay" title="Download and Play Video" data-toggle="modal" data-target="#myModal" class="badge"> <i
+                class="bi bi-play-circle-fill"></i></a>
+                
+    </div>
+    <button type="button" onclick="GetTop();" id="toTop" class="btn  btn-circle btn-xl" style="padding:0 !important ;">
+        <i class="bi bi-arrow-up-circle" style="font-size: 25px;font-weight: bolder;">
+        </i>
+    </button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+               <canvas src="~/asset/Image/LOGO_EN.png" class="Popuplogo"></canvas>
+                    <button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-warning text-justify pl-3 pr-3">
+                    <div id="Attention">Attention !</div>
+                    <div class="body-modale-custom">
+                       To download the instructional video, AMPRO software must be running, all instructional videos are saved in a specific path by AMPRO software. Instructional videos are stored in this path 
+                       </br>
+                        <div id="p-addres">
+                            C:\Users\YourUserName\Documents\Vebko\AMPro-HelpFilms
+                        </div>
+                        you can have full access to the videos through this path, note that each video will be playable after the full download and after each download, each video will be played It will be done automatically, if there is a newer video on the vebko.org server,the new video will be downloaded and then made available to you.
+                    </div>
+
+                    <div id="serverstatus" class="serverstatus pl-2">
+                        Server Status :
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-info text-light" data-toggle="tooltip"
+                       href="~/VideoPlayer.html?page=https://vebko.org/Downloads/Instructions/Tester\B_Software Installation & Connection Setting\0005_Software.Introduction.How.to.connect.to.AMT105_001\0005_Software.Introduction.How.to.connect.to.AMT105_001_en.mp4"
+                        target="_Blank" rel="noopener noreferrer">
+                        Play online
+                    </a>
+                    <a id="#playmp4" type="button" class="btn btn-success text-light" data-toggle="tooltip"
+                      href="~/VideoPlayer.html?page=https://vebko.org/Downloads/Instructions/Tester\B_Software Installation & Connection Setting\0005_Software.Introduction.How.to.connect.to.AMT105_001\0005_Software.Introduction.How.to.connect.to.AMT105_001_en.mp4"
+                        onclick="checkServer()">
+                        Download and play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="sharingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                 <canvas src="~/asset/Image/LOGO_EN.png" class="Popuplogo"></canvas>
+                    <button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify pl-3 pr-3">
+                    <div class="page_link mb-4">Page Link</div>
+                    <div class="row">
+                        <a id="inputmudal" type="url" class="col-11 ur text"
+                            aria-describedby="inputGroup-sizing-defult">https://vebko.org/Downloads/Instructions/ZZ_HELP/index.html?page=Pages\Tester\EN\B\How_to_Connect_to_AMT105.htm</a>
+                        <button class="cpy" title="Copy" onclick="copy('.text')">
+                            <i class="fa fa-clone text-light p-2"></i>
+                        </button>
+                        <input class="clipboard hidden" title="Copy"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="winchm_template_content">
+
+
+
+
+
+
+<div class=WordSection1 dir=RTL>
+
+
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>In order to be able to perform various tests with
+the device, it is necessary to connect to it via a laptop or computer. Before
+starting the device, the earth wire from the back of the device needs to be
+connected. Note that if the outlet is grounded, there is no need to connect the
+ground wire from the back of the device. Then, the power cord is connected to
+the specified location on the back of the device. After connecting the power
+cord, the power button on the front of the device is pressed and the device
+turns on. As the device turns on, 8 binary input lights (on the bottom row) and
+2 analog DC input lights (on the top right) turn on.</p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>There are two ways to connect to the device: Wi-Fi
+and LAN. The switch on the back of the device is adjusted according to the
+connection type. To switch the LAN connection, one end of the LAN cable is
+connected to the device and the other end is connected to the laptop. When the
+device and the laptop are properly connected and the switch is changed from
+Wi-Fi to LAN, the LAN port light of the device and the laptop turn on. The
+setting for the connection of the LAN port is set only once for each computer
+before the first connection. To set these settings, go to the &quot;Control
+Panel&quot; and open &quot;Network and Sharing Center&quot;.</p></div>
+
+<div><p class=AAA-Aks dir=LTR style='text-align:center;direction:ltr;unicode-bidi:
+embed'>
+ <img class="Image_Page"  src="~/Images/Tester/How_to_Connect_to_AMT105_files/image001.jpg" o:title=""/>
+<span style='mso-bidi-language:FA'></span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>On this window, by clicking on &quot;Change Adapter
+Setting&quot; another window opens. There are several sections on this window.
+To change the LAN settings, double click on &quot;Ethernet&quot;. Click on
+“Internet Protocol Version 4” in the opened window. On this window, enter
+192.168.1.20 in the &quot;IP Address&quot; field and then close the window.
+Then, open the &quot;AMPRO&quot; software. By clicking on &quot;Setting&quot;
+on the start page of the software, a new window opens. </p></div>
+
+<div><p class=AAA-Aks dir=LTR style='text-align:center;direction:ltr;unicode-bidi:
+embed'>
+ <img class="Image_Page"  src="~/Images/Tester/How_to_Connect_to_AMT105_files/image002.png" o:title=""/>
+<span lang=AR-SA dir=RTL style='font-family:"B Nazanin";mso-ansi-language:
+DE'></span></p></div>
+
+<div class = "card-panel hoverable"><p class=AAE-Normal dir=LTR>On this window, enter the last three digits of the
+serial number of the device in the fourth part of the IP field. To connect to
+the device, click on “CONNECT”. If a new version is connected to the device,
+the &quot;Firmware&quot; of the device will be updated once and after the green
+bar is filled, the device will be connected in a few seconds. To connect via
+Wi-Fi, the switch on the back of the device needs to be set on “Wi-Fi”. Then,
+from the &quot;Wi-Fi&quot; in quick launch bar on the laptop, find and select
+the Wi-Fi connection of the device. The password for this connection is the
+serial number available from the label attached to the side of the device. Once
+the connection is complete, click on “Setting” on the start page of the
+software. On this page, enter the last two digits of the serial number of the
+deivce in the fourth part of the &quot;I&quot; field. To connect to the device,
+click on “CONNECT”.</p></div>
+
+<p class=AAF-Normal dir=LTR><span style='mso-no-proof:yes'>
+ <img class="Image_Page"  src="~/Images/Tester/How_to_Connect_to_AMT105_files/image003.png" o:title=""/>
+</span><span style='mso-ansi-language:DE'><span
+style='mso-spacerun:yes'> </span></span><span style='mso-no-proof:yes'>
+ <img class="Image_Page"  src="~/Images/Tester/How_to_Connect_to_AMT105_files/image004.png" o:title=""/>
+</span></p></div>
+
+</div>
+
+<div style='mso-element:comment-list'>
+
+
+
+
+
+<div style='mso-element:comment'>
+
+<div id="_com_1" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_1','_com_1')"
+onmouseout="msoCommentHide('_com_1')"><span style='mso-comment-author:
+"javad ghyasvand";mso-comment-providerid:"Windows Live";mso-comment-userid:
+020b1cd6c1c02935'><a name="_msocom_1"></a></span>
+
+<p class=MsoCommentText dir=RTL><span class=MsoCommentReference><span dir=LTR
+style='font-size:8.0pt'><span style='mso-special-character:comment'>&nbsp;<a
+href="#_msoanchor_1" class=msocomoff>[jg1]</a></span></span></span><span
+dir=LTR>How_to_Connect_to_AMT105</span></p></div>
+
+</div>
+
+</div>
+
+</div>
+
+
+  <script src="~/asset/JS/jquery-2.1.1.min.js"></script>
+  <script src="~/asset/JS/jquery.highlight.js"></script>
+  <script src="~/asset/JS/jquery.scrollto.js"></script>
+  <script src="~/asset/JS/jquery.finder.js"></script>
+  <script src="~/asset/JS/bootstrap.min.js"></script>
+  <script src="~/asset/JS/zooming.js"></script>
+  <script src="~/asset/JS/Defult_page_Js.js"></script>
+
+ <script>
+    const defaultZooming = new Zooming()
+    const customZooming = new Zooming()
+    const config = customZooming.config()
+    const TRANSITION_DURATION_DEFAULT = config.transitionDuration
+    const BG_COLOR_DEFAULT = config.bgColor
+    const SCALE_BASE_DEFAULT = config.scaleBase
+    const ACTIVE_CLASS = 'button-primary'
+    const btnScaleSmall = document.getElementById('btn-scale-small')
+    document.addEventListener('DOMContentLoaded', function () {
+      defaultZooming.listen('img')
+      customZooming.listen('img2')
+    })
+
+    function isActive(el) {
+      return el.classList.contains(ACTIVE_CLASS)
+    }
+    function activate(el) {
+      el.classList.add(ACTIVE_CLASS)
+    }
+    function deactivate(el) {
+      el.classList.remove(ACTIVE_CLASS)
+    }
+    function toggleActive(el) {
+      if (isActive(el)) {
+        deactivate(el)
+        return false
+      } else {
+        activate(el)
+        return true
+      }
+    }
+  </script>
+
+

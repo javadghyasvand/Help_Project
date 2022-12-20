@@ -24,6 +24,8 @@
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
+        margin: 10px 10px 2% 10px;
+        margin-left: 2% !important;
     }
 }
 
@@ -69,7 +71,11 @@ span {
     font-size: 14px !important;
 }
 
-center > .Image_Page {
+.AAA-Aks {
+    text-align: left !important;
+}
+
+.Image_Page {
     max-width: 30%;
     height: auto;
     width: auto;
@@ -79,12 +85,14 @@ center > .Image_Page {
     padding: 1px !important;
     max-width: 200px !important;
     max-height: 250px !important;
-    text-align: right;
+    text-align: right !important;
+    margin: 10px 10px 2% 10px;
+    margin-left: 2% !important;
 }
 
-    center > img:hover {
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
+center > img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
 center {
     text-align: left;
@@ -281,8 +289,21 @@ input {
     z-index: 2;
 }
 
-.clipboard:focus {
-    outline: none;
+    .clipboard:focus {
+        outline: none;
+    }
+
+{
+    max-width: 30%;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    padding: 1px !important;
+    max-width: 200px !important;
+    max-height: 250px !important;
+    text-align: right;
 }
 
 * {
@@ -565,23 +586,26 @@ body {
     font-weight: bolder;
     font-size: large;
 }
-/*.MsoCommentText {
+
+.MsoCommentText {
     font-size: 10px !important;
     text-align: center !important;
     font-weight: 500 !important;
 }
-.MsoCommentText>* {
+
+    .MsoCommentText > * {
+        font-size: 10px !important;
+        text-align: center !important;
+        font-weight: 500 !important;
+        direction: rtl !important;
+    }
+
+.msocomtxt {
     font-size: 10px !important;
     text-align: center !important;
     font-weight: 500 !important;
     direction: rtl !important;
 }
-.msocomtxt {
-    font-size: 10px !important;
-    text-align: center !important;
-    font-weight: 500 !important;
-    direction: rtl !important;*/
-
 /*p.comment > * {
     font-size: 10px !important;
     text-align: center !important;
