@@ -1,0 +1,59 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+    xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="MR Vebko AMT105 Tester">
+    <title>Vebko</title>
+
+    <link href="asset/CSS/stylebiuld.css" rel="stylesheet" type="text/css" />
+    <link href="asset/CSS/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="asset/CSS/winchm_template_style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="asset/CSS/materialize.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="asset/Fonts/awesome/css/all.css" rel="stylesheet" type="text/css">
+    <link href="asset/CSS/doc_style_FullVersion_LTR_V1.0.css" rel="stylesheet" type="text/css">
+    <!-- icon title -->
+    <link rel="shortcut icon" href="asset/Image/vebkooo_eng.png" type="image/x-icon">
+</head>
+
+<body class="container" lang=EN-US>
+    <div id="winchm_template_title">
+        <a data-toggle="tooltip" title="Print" href="#" onClick="PrintElem();"><i class="fa fa-print"></i></a>
+    </div>
+    <section class="center">
+        <div class="float">
+            <img class="logo logohover" src="asset/Image/LOGO_EN.png">
+        </div>
+        <h1 class="marginline">Tester AMT105 Manual</h1>
+        <div class="line"></div>
+    </section>
+    
+    <div id="winchm_template_footer">&copy; 2021 Vebko. All rights reserved.</div>
+</body>
+
+<script>
+    function PrintElem() {
+        let regex = /(?=:)([\s\S]*?)(index)+/
+        let match = regex.exec(window.location.pathname);
+        var mywindow = window.open('', 'PRINT', 'height=700,width=1024');
+        mywindow.document.write('<link href="asset/CSS/PDF_style_FullVersion_LTR_V1.0.css" rel="stylesheet" type="text/css">');
+        mywindow.document.write(document.body.innerHTML);
+        mywindow.document.close();
+        mywindow.focus();
+        $(mywindow).load(function () {
+            mywindow.print();
+        });
+        return true;
+    }
+
+    function sleep(time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+</script>
+<script src="asset/JS/jquery-2.1.1.min.js"></script>
+<script src="asset/JS/materialize.min.js"></script>
+<script src="asset/JS/bootstrap.min.js"></script>
+
+</html>

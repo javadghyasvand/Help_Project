@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Vebko Video Player</title>
+    <script src="asset/JS/jquery-2.1.1.min.js"></script>
+    <!-- <script src="asset/JS/videoplayer.js"></script> -->
+    <script>
+        var LocString = String(window.document.location.href);
+        console.log(encodeURIComponent(LocString));
+        var DefaultPage;
+
+        function GetQueryString(str) {
+            var rs = new RegExp("(^|)" + str + "=([^\&]*)(\&|$)", "gi").exec(LocString),
+                tmp;
+            if (tmp = rs) return tmp[2];
+            return null;
+        }
+        DefaultPage = GetQueryString("PAGE");
+        if (DefaultPage == null || DefaultPage == '') {
+            DefaultPage = escape('https://vebko.org/Downloads/Instructions/Z_What%60s%20New/Test-AMPro%2021.04.21.01/001_Test-AMPro%2021.04.21.01_001_fa.mp4');
+        }
+        DefaultPage.replace(/\&/g, /\%26/g);
+        let ur = String(window.document.location.href);
+        console.log("ur", ur);
+
+
+        var index = ur.indexOf("?page=");
+        var newStr = ur.substring(index + 6, ur.length);
+        console.log(decodeURI(newStr));
+        // window.location.href = newStr
+        $(document).ready(function () {
+            if (newStr.indexOf("WhatsNew") > 0) {
+
+                newStr = newStr.replace("WhatsNew", "Z_What%60s%20New");
+                // newStr = newStr.replace(" ", /\%20/g);
+                // window.document.location.href = newStr;
+                $("#video").attr("src", decodeURI(newStr));
+
+            }
+            $("#video").attr("src", decodeURI(newStr));
+        });
+
+
+
+        // On click of button, enter PIP mode
+        function togglePictureInPicture() {
+            video.requestPictureInPicture()
+        }
+    </script>
+    <style>
+        #pip {
+            width: 35px !important;
+            height: 35px !important;
+            box-shadow: 3px 2px 3px rgb(78, 78, 78) !important;
+            position: relative !important;
+            top: -20vh !important;
+            left: 95% !important;
+            background: rgb(235, 234, 234) !important;
+            color: black !important;
+            border: 2px solid rgb(231, 231, 231) !important;
+            border-radius: 15px !important;
+        }
+    </style>
+</head>
+
+<body style="overflow: hidden;">
+    <video id="video" width="100%" height="100%" width="400" controls="controls" preload="metadata">
+        <source type="video/mp4">
+    </video>
+
+</body>
+
+</html>

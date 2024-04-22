@@ -1,0 +1,87 @@
+
+    <div id="winchm_template_title">
+
+        <a id="playmp4" title="Page Share" data-toggle="modal" data-target="#sharingModal" class="badge"><i
+                class="bi bi-share-fill"></i></a>
+
+        <a class="finder-activator badge" title="Search" data-finder-activator><i class="bi bi-search"></i></a>
+
+        <a data-toggle="tooltip" title="Print" href="#" onClick="PrintElem();" class="badge"><i
+                class="bi bi-printer-fill"></i></a>
+
+        <a id="modalplay" title="Download and Play Video" data-toggle="modal" data-target="#myModal" class="badge"> <i
+                class="bi bi-play-circle-fill"></i></a>
+                
+    </div>
+    <button type="button" onclick="GetTop();" id="toTop" class="btn  btn-circle btn-xl" style="padding:0 !important ;">
+        <i class="bi bi-arrow-up-circle" style="font-size: 25px;font-weight: bolder;">
+        </i>
+    </button>
+<!-- modal play -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+               <canvas src="~/asset/Image/LOGO_EN.png" class="Popuplogo"></canvas>
+                    <button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-warning text-justify pl-3 pr-3">
+                    <div id="Attention">Attention !</div>
+                    <div class="body-modale-custom">
+                       To download the instructional video, AMPRO software must be running, all instructional videos are saved in a specific path by AMPRO software. Instructional videos are stored in this path 
+                       </br>
+                        <div id="p-addres">
+                            C:\Users\YourUserName\Documents\Vebko\AMPro-HelpFilms
+                        </div>
+                        you can have full access to the videos through this path, note that each video will be playable after the full download and after each download, each video will be played It will be done automatically, if there is a newer video on the vebko.org server,the new video will be downloaded and then made available to you.
+                    </div>
+
+                    <div id="serverstatus" class="serverstatus pl-2">
+                        Server Status :
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-info text-light" data-toggle="tooltip"
+                       href="~/VideoPlayer.html?page=https://vebko.org/Downloads/Instructions/@VideoLinkThisPage"
+                        target="_Blank" rel="noopener noreferrer">
+                        Play online
+                    </a>
+                    <a id="#playmp4" type="button" class="btn btn-success text-light" data-toggle="tooltip"
+                      href="~/VideoPlayer.html?page=https://vebko.org/Downloads/Instructions/@VideoLinkThisPage"
+                        onclick="checkServer()">
+                        Download and play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal share -->
+    <div class="modal fade" id="sharingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                 <canvas src="~/asset/Image/LOGO_EN.png" class="Popuplogo"></canvas>
+                    <button type="button" class="close mt-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-justify pl-3 pr-3">
+                    <div class="page_link mb-4">Page Link</div>
+                    <div class="row">
+                        <a id="inputmudal" type="url" class="col-11 ur text"
+                            aria-describedby="inputGroup-sizing-defult">https://vebko.org/Downloads/Instructions/ZZ_HELP/@ShareURL</a>
+                        <button class="cpy" title="Copy" onclick="copy('.text')">
+                            <i class="fa fa-clone text-light p-2"></i>
+                        </button>
+                        <input class="clipboard hidden" title="Copy"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="winchm_template_content">
+

@@ -1,0 +1,259 @@
+/* Font Definitions */
+
+@font-face {
+    font-family: "Vazir";
+    src: url('../../asset/Fonts/vazir/Vazir.eot');
+    src: url('../../asset/Fonts/vazir/Vazir.woff') format('woff'), url('../../asset/Fonts/Vazir.ttf') format('ttf');
+    font-weight: normal;
+}
+
+.Popuplogo {
+    margin-right: 75% !important;
+}
+
+.close>span {
+    color: #000 !important;
+}
+
+.close:hover,
+.close:focus {
+    color: #000 !important;
+}
+
+.app {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.card-panel {
+    margin: 10px !important;
+}
+
+.MsoCommentReference {
+    margin-right: 45%;
+}
+
+.card-panel * {
+    font-size: 18px !important;
+}
+
+
+/* Scroll 2 */
+
+.sc2::-webkit-scrollbar {
+    width: 8px;
+    height: 60px;
+    direction: rtl;
+}
+
+.sc2::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    direction: rtl;
+}
+
+.sc2::-webkit-scrollbar-thumb {
+    background-color: #05806e;
+    border-radius: 10px;
+    direction: rtl;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 0 2px 1px rgb(0 140 186 / 50%);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.MsoTable15Plain1 {
+    width: 50% !important;
+    margin-right: 20%;
+    border-collapse: collapse !important;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+ ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+.card-panel {
+    font-family: "Vazir"!important;
+}
+
+body {
+    font-family: "Vazir"!important;
+}
+
+span {
+    font-family: "Vazir"!important;
+}
+
+ol {
+    margin-bottom: 0in;
+}
+
+ul {
+    margin-bottom: 0in;
+}
+
+.card-panel {
+    font-family: "Vazir"!important;
+}
+
+span {
+    font-family: "Vazir"!important;
+}
+
+h4>span {
+    font-size: 20px !important;
+}
+
+h3>span {
+    font-size: 20px !important;
+}
+
+h3,
+h4 {
+    font-size: 20px !important;
+    border: 1px solid #21AE9D !important;
+    box-sizing: content-box !important;
+    margin-top: 3% !important;
+    text-align: center;
+    background: radial-gradient(circle, rgba(37, 86, 115, 1) 20%, rgba(21, 91, 124, 1) 48%, rgba(41, 133, 144, 1) 78%, rgba(39, 157, 143, 1) 94%);
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: "Vazir"!important;
+}
+
+.MsoCommentText {
+    font-size: 10px;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 0 2px 1px rgb(0 140 186 / 50%);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.card-panel {
+    border-radius: 13px !important;
+    margin: 1.5rem 2rem 3rem 1.3rem!important;
+}
+
+h3>a {
+    text-decoration: none !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+}
+
+h3>a:hover {
+    text-decoration: none !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+}
+
+h4>a {
+    text-decoration: none !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+}
+
+h4>a:hover {
+    text-decoration: none !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+}
+
+h4 * {
+    text-decoration: none !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+}
+
+h3 * {
+    text-decoration: none !important;
+    color: #ffff !important;
+    font-size: 20px !important;
+}
+
+
+/* Scroll  */
+
+.sc2::-webkit-scrollbar {
+    width: 8px;
+    height: 100px;
+}
+
+.sc2::-webkit-scrollbar-track {
+    background-color: rgb(47 46 46 / 20%);
+    border-radius: 10px;
+}
+
+.sc2::-webkit-scrollbar-thumb {
+    background-color: #05806e;
+    border-radius: 10px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/* List Definitions */
+
+ol {
+    margin-bottom: 0in;
+}
+
+ul {
+    margin-bottom: 0in;
+}
+
+.WordSection1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width:750px) {
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        box-shadow: 0 0 2px 1px rgb(0 140 186 / 50%);
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+}

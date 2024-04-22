@@ -1,0 +1,1215 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+    <title>Vebko</title>
+    <!-- icon title -->
+    <link rel="icon" href="asset/Image/Vebko_EN.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="asset/CSS/bootstrap-rtl.min.css" rel="stylesheet">
+    <!-- Custom styles-->
+    <link href="asset/CSS/Styles_RTL_V1.0.css" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" href="asset/Fonts/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body dir="rtl">
+    <!-- navbar -->
+    <div class="NavbarCustomeHelp">
+        <ul class="menu-help">
+            <li class="menu-help_li">
+                <button type="button" title="إغلاق / فتح القائمة" class="menu-Button" id="Btn-Col-Sidebar">
+                    <img src="asset/Image/sidebar.png" width="35px" height="30px">
+                    <span id="txt_sh-hi" class="menu-Button-text">إغلاق</span>
+                </button>
+            </li>
+            <li class="menu-help_li">
+                <button id="Btn-printer" title="مطبعة" type="button" class="menu-Button" data-toggle="modal"
+                    data-target="#printpopup">
+                    <img src=" asset/Image/printer.png" width="35px" height="30px">
+                    <span class="menu-Button-text">مطبعة</span>
+                </button>
+            </li>
+            <li class="menu-help_li">
+                <button id="Btn-PDF" title="تحميل PDF" type="button" class="menu-Button" data-toggle="modal"
+                    data-target="#dowloadpopup">
+                    <img src="asset/Image/download-pdf.png" width="35px" height="30px">
+                    <span class="menu-Button-text">PDF</span>
+                </button>
+            </li>
+            <li class="menu-help_li li-hr">
+                <div class="v-line">
+                </div>
+            </li>
+            <li class="menu-help_li" title="لغة">
+                <div id class="lang_div">
+                    <span><img src="asset/Image/world.png" width="30px" height="30px"></span>
+                    <select id="lang_Help" class="select-style">
+                        <option value="English">إنجليزي</option>
+                        <option value="Persian">الفارسية</option>
+                        <option value="German">ألمانية</option>
+                        <option value="Spanish">الأسبانية</option>
+                        <option value="French">فرنسي</option>
+                        <option value="Arabic" selected=selected>عربي</option>
+                    </select>
+                </div>
+            </li>
+            <div class="log-in-menu">
+                <img src="asset/Image/Vebko_EN_Log.png" class="image_log">
+            </div>
+        </ul>
+    </div>
+    <!-- contanet -->
+    <div class="panel-container ">
+        <div class="panel-left">
+            <div class="serach-div" title="يبحث">
+                <label class="sarech_label" for="Serach_text ">
+                    <img width="25px" src="asset/Image/magnifying-glass-search.png">
+                </label>
+                <input class="input-serach" id="searchbox" type="text" placeholder="ابحث عن الموضوعات..."
+                    onkeyup="SearchFunction()">
+            </div>
+            <hr class=" hr-sidebar">
+            <div class="categury_div text-center">
+                <select title="فئة" id="Tab_selection" class="select-style">
+                    <option value="Tester">Tester AMT105</option>
+                    <option value="Relay">Relay AMR</option>
+                    <option value="WhatsNew">Whats New</option>
+                    <option value="WorkOrder">Work Order</option>
+                    <option value="Linkedin"> Linkedin</option>
+                </select>
+                <select title="WhatsNew Sort by" name="selector_whatsnew" id="wathsnew_dropdown" class="select-style none-display">
+                    <option id="Title" value="Title" selected>عنوان</option>
+                    <option id="Version" value="Version">إصدار</option>
+                    <option id="BugOptions" value="BugOptions">البق والخيارات</option>
+                </select>
+                <select title="Linkedin Sort by " name="selector_Linkedin" id="Linkedin_dropdown"
+                    class="select-style none-display">
+                    <option id="AMT105" value="AMT105" selected>AMT105</option>
+                    <option id="AMT205" value="AMT205">AMT205</option>
+                    <option id="Date" value="Date">تاريخ</option>
+                </select>
+            </div>
+            <figure id="tabfigure" class="tabBlock disable-select">
+                <div id="tabBlock-content" class="tabBlock-content">
+
+
+
+                    <!--Contant tester -->
+                    <div id="contant-Tester" class="tabBlock-pane">
+                        <!-- vb start tester-->
+
+                        <li id="Introducing the Company and Products" class="sub-menu tester"><a href="javascript:;"
+                                class=""><img width="20px" src="asset/Image/Close_Book.png"><span>دخيلة الشركة وتنتج
+                                </span></a>
+                            <ul class="sub">
+                                <li id="Assemblying_Stages_of_AMT105_Tester"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\A\Assemblying_Stages_of_AMT105_Tester"><img width="18px"
+                                            src="asset/Image/help.png">خطوات تجمیع فاحص AMT105
+                                    </a></li>
+                                <li id="Introducing_the_Device_and_Equipment"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\A\Introducing_the_Device_and_Equipment"><img width="18px"
+                                            src="asset/Image/help.png">التعرف علی الجهاز و المعدات INTRODUCING
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li id="Software.Introduction.Software.Installation" class="sub-menu tester"><a
+                                href="javascript:;" class=""><img width="20px"
+                                    src="asset/Image/Close_Book.png"><span>تثبيت البرامج وإعداد الاتصال
+                                </span></a>
+                            <ul class="sub">
+                                <li id="Software_Installation"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\B\Software_Installation"><img width="18px"
+                                            src="asset/Image/help.png">ترکیب البرمجیة
+                                    </a></li>
+                                <li id="How_to_Connect_to_AMT105"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\B\How_to_Connect_to_AMT105"><img width="18px"
+                                            src="asset/Image/help.png">طریقة الاتصال الی الجهاز
+                                    </a></li>
+                                <li id="Simultaneous_Connection_of_Several_Testers"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\B\Simultaneous_Connection_of_Several_Testers"><img
+                                            width="18px" src="asset/Image/help.png">اتصال متزامن بعدة أجهزة
+                                    </a></li>
+                                <li id="Resetting_IP_Address"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\B\Resetting_IP_Address"><img width="18px"
+                                            src="asset/Image/help.png">إعادة تعيين IP للجهاز
+                                    </a></li>
+                                <li id="Updating_Firmware_of_Device_Manually"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\B\Updating_Firmware_of_Device_Manually"><img width="18px"
+                                            src="asset/Image/help.png">تحدیث FIRMWARE للجهاز بشکل یدوی
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li id="Preferences.w.Room.t." class="sub-menu tester"><a href="javascript:;" class=""><img
+                                    width="20px" src="asset/Image/Close_Book.png"><span>الإعدادات الإفتراضية
+                                </span></a>
+                            <ul class="sub">
+                                <li id="General_Setting_of_Rooms"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\C\General_Setting_of_Rooms"><img width="18px"
+                                            src="asset/Image/help.png">الإعدادات العامة لـ"ROOMS"
+                                    </a></li>
+                                <li id="General_Setting_of_Rooms_part2"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\C\General_Setting_of_Rooms_part2"><img width="18px"
+                                            src="asset/Image/help.png">الاعدادات العامة للغرف ، قسم 2
+                                    </a></li>
+                                <li id="Default_Setting_for_Report"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\C\Default_Setting_for_Report"><img width="18px"
+                                            src="asset/Image/help.png">الضبط الافتراضی لـ REPORT
+                                    </a></li>
+                                <li id="Preferences_page_Directory_and_Cash_tab"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\C\Preferences_page_Directory_and_Cash_tab"><img
+                                            width="18px" src="asset/Image/help.png">اعدادات DIRECTORYو CACHE للغرفات
+                                    </a></li>
+                                <li id="Connection_and_Firmware_tab"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\C\Connection_and_Firmware_tab"><img width="18px"
+                                            src="asset/Image/help.png">فوهة "CONNECTION & FIRMWARE
+                                    </a></li>
+                                <li id="Device_Hardware_Setting"><a class="newpage tester" href="#"
+                                        name="Pages\Tester\AR\C\Device_Hardware_Setting"><img width="18px"
+                                            src="asset/Image/help.png">اعدادات عتادات الحاسوب
+                                    </a></li>
+
+
+
+                                <!-- vb end-->
+                            </ul>
+                        </li>
+                    </div>
+
+
+
+                    <!-- Contant Relay -->
+                    <div id="contant-Relay" class="tabBlock-pane none-display">
+                        <!-- vb start Relay-->
+                        <li id="Assmbling AMR Relay_" class="sub-menu relay">
+                            <a href="javascript:;" class=""><img width="20px"
+                                    src="asset/Image/Close_Book.png"><span>دخيلة الشركة وتنتج
+                                </span></a>
+                            <ul class="sub">
+                                <li id="RE_Assembly_Stages_of_AMR_Relay">
+                                    <a class="newpage relay" href="#"
+                                        name="Pages\Relay\AR\A\RE_Assembly_Stages_of_AMR_Relay"><img width="18px"
+                                            src="asset/Image/help.png">خطوات تجميع مرحل AMR
+                                    </a>
+                                </li>
+
+                                <!-- vb end-->
+                            </ul>
+                        </li>
+                    </div>
+
+
+
+                    <!-- Contant WorkOrder -->
+                    <div id="contant-WorkOrder" class="tabBlock-pane none-display">
+                        <!-- vb start workorder-->
+                        <li class="sub-menu WorkOrder">
+                            <a href="javascript:;" class=""><img width="20px" src="asset/Image/Close_Book.png"><span>
+                                    قريبا ...
+                                </span>
+                            </a>
+                            <!-- vb end-->
+                            </ul>
+                        </li>
+                    </div>
+
+
+
+
+                    <!-- Contant WhatsNew Title -->
+                    <div id="contant-WhatsNew_DA" class="tabBlock-pane none-display">
+                        <!-- vb start WhatsNew-->
+                        <li class="sub-menu whatsnew">
+                            <a href="javascript:;" class="">
+                                <img width="20px" src="asset/Image/Close_Book.png">
+                                <span>قريبا ...</span>
+                            </a>
+                            <!-- vb end-->
+                            </ul>
+                        </li>
+
+                    </div>
+
+
+
+                    <!--Contant WhatsNew Version-->
+                    <div id="contant-WhatsNew_VR" class="tabBlock-pane none-display">
+                        <!-- vb start WhatsNew VR-->
+                        <li class="sub-menu whatsnew_VR">
+                            <a href="javascript:;" class="">
+                                <img width="20px" src="asset/Image/Close_Book.png">
+                                <span>قريبا ...</span>
+                            </a>
+                            <!-- vb end-->
+                            </ul>
+                        </li>
+                    </div>
+
+
+
+                    <!--Contant WhatsNew Bug Option -->
+                    <div id="contant-WhatsNew_BO" class="tabBlock-pane none-display">
+                        <!-- vb start WhatsNew BO-->
+                        <li class="sub-menu whatsnew_BO">
+                            <a href="javascript:;" class="">
+                                <img width="20px" src="asset/Image/Close_Book.png">
+                                <span>قريبا ...</span>
+                            </a>
+                            <!-- vb end-->
+
+                            <!-- vb end-->
+                            </ul>
+
+                        </li>
+
+                    </div>
+
+
+                    <!--Contant Linkedin AMT205-->
+                    <div id="contant-Linkedin_AMT205" class="tabBlock-pane none-display">
+                        <!-- vb start Linkedin AMT205-->
+                        <li class="sub-menu WorkOrder">
+                            <a href="javascript:;" class=""><img width="20px" src="asset/Image/Close_Book.png"> <span> À
+                                    قريبا ...</span>
+                            </a>
+                            </ul>
+                        </li>
+
+                        <!-- vb end-->
+                    </div>
+
+                    <!--Contant Linkedin AMT105 -->
+                    <div id="contant-Linkedin_AMT105" class="tabBlock-pane none-display">
+                        <!-- vb start Linkedin AMT105-->
+                        <li class="sub-menu WorkOrder">
+                            <a href="javascript:;" class=""><img width="20px" src="asset/Image/Close_Book.png"> <span> À
+                                    قريبا ...</span>
+                            </a>
+                            <!-- vb end-->
+                            </ul>
+                        </li>
+                    </div>
+                    <!--Contant Linkedin Date -->
+                    <div id="contant-Linkedin_Date" class="tabBlock-pane none-display">
+                        <!-- vb start Linkedin Date-->
+                        <li class="sub-menu WorkOrder">
+                            <a href="javascript:;" class=""><img width="20px" src="asset/Image/Close_Book.png"> <span> À
+                                    قريبا ...</span>
+                            </a>
+                            <!-- vb end-->
+                            </ul>
+
+                        </li>
+
+                    </div>
+
+                </div>
+            </figure>
+        </div>
+        <div class="splitter"></div>
+        <div class="panel-right">
+            <content id="content"></content>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--Full Version downlad pupup -->
+    <div class="modal fade-in" id="printpopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">مطبعة</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="margin-left: -10px;" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="page-link" href="Full_Version_Tester_AR.html" target="_blank" style="border-radius: 8px;">
+
+                        <img src="asset/Image/html.png">
+                        <span style="color: black; padding-left: 5px;">النسخة الكاملة دليل AMT105</span>
+                    </a>
+                    <a class="page-link" href="Full_Version_Relay_AR.html" target="_blank" style="border-radius: 8px;">
+                        <img src="asset/Image/html.png">
+                        <span style="color: black; padding-left: 5px;">النسخة الكاملة دليل التقوية</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PDF downlad pupup -->
+    <div class="modal fade-in " id="dowloadpopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">PDF</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="margin-left:-10px;" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" dir="rtl">
+                    <a dir="ltr" id="download-tester" class="page-link" onclick=downloadFile_AMT_Manual()
+                        src="/Downloads/Instructions/PDF/Tester/AMT_Manual_AR.pdf" style="border-radius: 8px;">
+                        <img src="asset/Image/pdf.png">
+                        <span style="color: black; padding-left: 5px;cursor:pointer;">دليل AMT105</span>
+                    </a>
+                    <a dir="ltr" id="download-relay" class="page-link" onclick=downloadFile_Relay_Manual()
+                        src="/Downloads/Instructions/PDF/Relay/Relay_Manual_AR.pdf" style="border-radius: 8px;">
+                        <img src="asset/Image/pdf.png">
+                        <span style="color: black; padding-left: 5px; cursor:pointer;">دليل Relay</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- serach data -->
+
+    <Root style="display:none !important;" id="Search_Relay">
+        <contant id="RE_Assembly_Stages_of_AMR_Relay">
+            <Search>خطوات تجميع مرحل AMR تتكون Main Case" لمرحل "AMR" المعدني ، المصمم من قبل المتخصصين في Vebko ، من
+                ألومنيوم 3105 ويتم وضع وحدات التتابع المختلفة في الرفوف المثبتة بداخلها. يتم فتح اللوحة الأمامية لوحدة
+                "Main Case" لبدء التجميع. / اعداد "MidPlate"
+                من أجل تحضير "MidPlate" ، يتم وضع الوحدة الصغيرة عليها ويتم وضع اللوحة الأمامية لـ "Main Case" التي تم
+                فتحها مسبقًا على وحدة "MidPlate" ويتم إغلاق المسامير المرتبطة . بعد ذلك ، يتم وضع اللوحة الأمامية مع
+                "MidPlate" على وحدة "Main Case"
+                ويتم إغلاق المسامير المرتبطة. / تحضير لوحة الطاقة Back panel وضع بطاقة PS أو الطاقة علی بطاقة PS و یتم
+                اغلاق المسامیر المرتبطة ثم وضع بطاقة PSداخل "Main Case و تم اغلاق المسامیر المرابطة / اعداد بطاقة "CPU"
+                أو "Main Card / / / / / /
+            </Search>
+        </contant>
+
+    </Root>
+    <Root style="display:none !important;" id="Search_Tester">
+        <contant id="Assemblying_Stages_of_AMT105_Tester">
+            <Search>خطوات تجمیع فاحص AMT105
+                
+                الاجزاء التی تم استخدامها لتجمیع جهاز فاحص AMT105، هی عبارة عن :
+                أربعة أسلاك مع أربعة موصلات فينكس أنثى 2 دبوس
+                /
+                أربعة أسلاك مع موصلات فينكس أنثى 4 دبوس
+                /
+                الموصلات الحالية
+                /
+                موصلات الجهد
+                /
+                اسلاک الفلت
+                /
+                لوحة نيوتريك
+                اللوحة الخلفية
+                اللوحة القدامیة
+                /
+                وحدة التبديل
+                مجموعة کاملة من وحدة التبدیل
+                /
+                مجموعة معیوبة من وحدة التبدیل
+                /
+                وحدة مکبر الصوت
+                مجموعة کاملة من وحدة مکبر الصوت
+                /
+                مجموعة ناقصة وحدة مکبر الصوت
+                /
+                قضیة
+                /
+                لتجميع الجهاز ، من الضروری أولاً ثبت اللوحة الخلفية على العلبة. ثم رجع العلبة و قفها أمامك بحيث يكون
+                مقبس الطاقة على جانبك الأيمن. قم بتوصيل أحد الأسلاك الأرضية بمقبس الطاقة والآخر بمقبس الأرض. يجب توصيل
+                السلك الثاني بمقبس التوصيل الأرضي.
+                /
+                /
+                وضع وحدة مکبر الصوت داخل الکیس
+                يتم وضع وحدة مكبر الصوت في الحالة التي تكون فيها الرفوف أقل تباعدًا مقابل مقبس طاقة الإدخال.
+                /
+                لوضع مکبر الصوت داخل الکیس
+                يدخل الجانب الكامل من مكبر الصوت إلى جدار العلبةالتی تکون لها ست التحکم من البعید . يجب وضع حواف الوحدة
+                داخل 4 رفوف.
+                /
+                توصيل مقبس المروحة بوحدة مكبر الصوت
+                أدخل الوحدة حتى 5 سم في نهاية العلبة ، ثم خذ سلك المروحة من الجزء الخلفي من spacer وقم بتوصيل المقبس
+                بمكبر الصوت ثم ادفع الوحدة إلى أسفل العلبة.
+                /
+                ملاحظة: تأكد من أن سلك المروحة ليس تحت أي وحدات أو داخل المروحة.
+                موضع وحدة مكبر الصوت داخل العلبة
+                يجب أن يكون الجانب غير المكتمل من وحدة التبديل الذي يحتوي على لوحة أوامر فقط على جانب جدار العلبة ، بحيث
+                تكون منافذ Ethernet و USB و RS232 و Wi-Fi و GPS لأسفل وتوضع في اللوحة الخلفية .
+                /
+                توصيل مقبس المروحة بوحدة التحويل
+                أدخل الوحدة حتى 5 سم في نهاية العلبة ، ثم خذ سلك المروحة من الجزء الخلفي من spacer وقم بتوصيل المقبس
+                بوحدة التحويل أخيرًا ادفع الوحدة إلى أسفل العلبة.
+                /
+                التركيب الكامل لوحدة التحويل
+                عن طريق هز منفذ GPS ، يجب وضع وحدة التبديل بالكامل في الجزء السفلي من العلبة.
+                /
+                يجب أن يكون مقبس Ethernet و USB على بعد 1 إلى 2 مم من الجزء الخلفي من العلبة. ، في حالة توقف المنافذ ،
+                فإن اهتزازها يسمح لها بالخروج من اللوحة الخلفية.
+                /
+                احرص على عدم وضع سلك المروحة أسفل الوحدة أو داخل المروحة.
+                تنصیب اللوحة القدامیة
+                قبل تثبيت اللوحة الأمامية ، تأكد من أن السلك المصقول المتصل باللوحة الخلفية یکون مستقيما تمامًا.
+                توصيل الأسلاك المصقولة بمصدر طاقة الإدخال
+                قم بتوصيل رأسي الأسلاك التي تأتي من اللوحة الخلفية بالجانب الصفري لمفتاح الطاقة على اللوحة.
+                انتبه إلى الاتجاه الخارجي للمزالج بحيث يمكن فتحها بسهولة.
+                /
+                توصيل أربعة موصلات فينيكس ثنائية السنون
+                أولاً ، قم بتوصيل اثنين من موصلات Phoenix الأنثوية المكونة من دبوسين باللوحة غير المكتملة لوحدات
+                التبديل. قم بتوصيل الجانب الآخر بوحدات التحويل.
+                /
+                توصيل موصل فينيكس ذو 4 سنون
+                قم بتوصيل جانب واحد من سلك الطاقة المقابل بمفتاح 1 وقم بتوصيل جانب Phoenix بلوحة التبديل غير المكتملة.
+                /
+                /
+                /
+                توصيل طائر الفينيق باللوحة الأمامية
+                أولاً ، على الجانب الأيسر ، قم بتوصيل Phoenixes المقابلة بمكبر الصوت. يجب عليك أولاً توصيل طائر
+                Phoenixes 16 دبوسًا ثم توصيل اثنين من العنقاء المكونة من 5 أسنان.
+                /
+                ثم قم بتثبيت phoenixes المناسب على الجانب الأيمن من مكبر الصوت
+                /
+                اتصال لوحة نوتریک
+                أولاً ، قم بتدوير الجهاز بحيث يكون مفتاح الطاقة على يسارك. يجب بعد ذلك وضع لوحة النوتریک بين صوتيات مكبر
+                الصوت بحيث يكون المقبس مواجهًا لك والمقبس المتصل بلوحة مكبر الصوت الكاملة. ثم قم بإرفاق phoenixes على
+                هذه اللوحة في مكانها.
+                /
+                التثبيت الكامل للوحة الأمامية
+                يتم وضع الحامل في منتصف الطريق على موصلات جهد Phoenix المكونة من 6 فلت. قم بتوصيل الجهد 6 دبوس Phoenix
+                الذي يتم وضع الحامل عليه بالمفتاح ووضع الحامل في مكانه.
+                /
+                اتصال موصل جهد غير كامل لوحدة مكبر للصوت
+                موصل أنثوي ثنائي السنون من Phoenix مع أسلاك أطول بما في ذلك سلكان باللون الأحمر والأسود ليتم توصيلهما
+                بالموصل العلوي الذكر ثنائي السنون من Phoenix.
+                /
+                موصلات Phoenix أنثى ذات 3 أسنان بأسلاك أقصر باللون الأحمر والأسود والأزرق يجب توصيلها بموصلات Phoenix
+                الذكور ذات الثلاثة سنون السفلية.
+                /
+                ملاحظة: قبل توصيل الموصل الأنثوي الخاص بصوتيات موصل الجهد بوحدة مكبر الصوت ، قم بتوصيل الحامل المقابل
+                لهذا الصوت.
+                توصيل الموصلات الحالية على الجانب غير المكتمل من وحدة التحويل
+                /
+                أولاً ، ضع حامل تيار سلك أزرق على حامل Phoenix 8-pin وقم بتوصيله بلوحة التبديل الداخلية Phoenix 8-pin.
+                /
+                قم بتوصيل الموصل الأنثوي Phoenix المكون من 4 سنون بحامل بأسلاك زرقاء وحجم أكبر بموصل Phoenix الذكر
+                الثاني من الأسفل. قم بتوصيل الموصل الأنثوي Phoenix المكون من 4 سنون بالحامل بأسلاك زرقاء وحجم أقصر بأول
+                موصل Phoenix ذكر من الأسفل.
+                /
+                ضع حاملًا للتيار السلك الأسود على دبوس Phoenix 4 وقم بتوصيله بدبوس Phoenix 4 على لوحة التبديل غير
+                المكتملة. يتصل الموصل النسائي Phoenix المكون من 4 سنون بأول موصل Phoenix ذكر من الأعلى.
+                /
+                /
+                ضع حاملًا للتيار السلك الأحمر على Phoenix 8-pin وقم بتوصيله بلوحة التبديل الذكور Phoenix 8-pin.
+                /
+                قم بتوصيل الموصل الأنثوي ذو 4 سنون من Phoenix بحامل بأسلاك حمراء وحجم أكبر بموصل Phoenix الذكر الثاني من
+                الأعلى. قم بتوصيل الموصل الأنثوي ذو 4 سنون من Phoenix بحامل بأسلاك حمراء وحجم أقصر بموصل Phoenix الذكر
+                الثالث من الأعلى. ثم شد جميع أسلاك التيار والجهد المثبت بإبزيم الحزام.
+                /
+                /
+                /
+                أغلق الكبل المسطح 25 * 2-16 سم كلا الجانبين بدون تبديل
+                يربط هذا الكبل المسطح الجانب الكامل من لوحة التبديل بالجانب الكامل للوحة مكبر الصوت.
+                /
+                قم بتثبيت حامل القاعدة القصيرة IDC على جانب وحدة مكبر الصوت المتصلة بجدار العلبة
+                قم بتوصيل الحامل بـ IDC من جانب والجانب الآخر بـ IDC باستخدام مفك براغي أو كماشة.
+                سلك توصيل لباد 10 * 2 15 سم
+                يقوم هذا الكبل بتوصيل الجانب غير المكتمل والكامل لوحدة التحويل.
+                /
+                کیس قم بتركيب حاملي مكبر للصوت وحاملي تبديل على السكة الوسطى للعلبة
+                يجب وضع الحوامل على الدرجی ووضع الأخاديد المثبتة عليها على الوحدة واللوحة الرئيسية ، وبعد ذلك يجب تشريب
+                كل حامل بمسمارين 16 * 5/2 مشربان بغراء برغي خاص جنبًا إلى جنب مع مسطح الغسالة على الحامل والسكك الحديدية
+                الوسط مغلق ومحكم.
+                /
+                قم بتركيب حامل المايكرو
+                أدخل الحامل الصغير ، ضعه على جانب واحد على الدرجی الوسطى للعلبة وعلى الجانب الآخر ، يجب وضع دبابيسه على
+                أخاديد الدرجی السفلي للعلبة.
+                /
+                تركيب حامل لوحة مكبر الصوت ولوحة لنوتریک
+                هذا الحامل متصل بجدار العلبة من جانب واحد بواسطة مسامير 2 4 * 8 مشربة بغراء خاص جنبًا إلى جنب مع
+                الصواميل وغسالات الزنبرك ومسطح بجسم العلبة. من ناحية أخرى ، يتم وضع الأخاديد المثبتة في هذا الحامل على
+                الوحدة واللوحة الرئيسية لمكبر الصوت. يتم توصيل لوح الجوز أيضًا بهذا الحامل بواسطة مسامير 1 × 3 مشربة
+                بغراء خاص جنبًا إلى جنب مع المكسرات وغسالات الزنبرك.
+                /
+                تثبيت حامل الوحدة ولوحة التحويل الرئيسية
+                يتم توصيل هذا الحامل بجدار العلبة من جانب واحد ويتم توصيله بجسم العلبة بواسطة مسامير 2 4 * 8 مشربة بغراء
+                لولبي خاص جنبًا إلى جنب مع المكسرات وغسالات الزنبرك ومسطحة. ومن ناحية أخرى ، يتم توصيله بالوحدة ولوحة
+                التحويل الرئيسية.
+                /
+                تركيب حوامل 10 * 2 IDC ، 10 * 2 15 سم كابل مسطح
+                ضع الحامل على كابل مسطح 10 * 2 واضغط عليه بقليل من الضغط على IDC.
+                /
+                توصيل الأسلاك الأرضية
+                يجب توصيل السلكين الأرضيين المتصلين بالعلبة بالجانب الكامل لوحدة التحويل والجانب غير المكتمل لوحدة مكبر
+                الصوت.
+                /
+                اتصال موصل جهد غير كامل لوحدة التحويل
+                /
+                قم بتثبيت جانب Phoenix لكابل الجهد ذي 6 سنون الذي يوجد عليه الحامل في وحدة التبديل و وضع الحامل علی
+                مکانه .
+                /
+                قم بتوصيل الموصلات الحالية للجانب الكامل لوحدة التحويل
+                /
+                أولاً ، قم بتوصيل السلك الأزرق المكون من 8 أسنان من Phoenix بحامله بوحدة التحويل الكاملة.
+                ثم قم بتوصيل السلك الأسود ذي 4 سنون من Phoenix مع حامله بوحدة التحويل الكاملة.
+                /
+                أخيرًا ، قم بتوصيل السلك الأحمر المكون من 8 أسنان من Phoenix بحامله بوحدة التحويل الكاملة.
+                /
+                /
+                توصيل موصلات الجهد بالجانب الكامل لوحدة مكبر الصوت
+                موصل Phoenix الأنثوي بسلك أقصر يتصل به الحامل بموصل Phoenix الذكر ذي الثلاثة سنون العلوي. قم بتوصيل
+                الموصل الأنثوي Phoenix بسلك أطول يتصل به الحامل بموصل Phoenix الذكر ذي الثلاثة سنون السفلي.
+                /
+                وصيل الموصلات الحالية بالجانب المعيب من وحدة مكبر الصوت
+                أولاً ، قم بتوصيل الموصل الأنثوي Phoenix المكون من 4 سنون بسلك أزرق بأسلاك أطول يوجد عليها الحامل ،
+                بموصل Phoenix الذكر الثاني المكون من 4 سنون من الأسفل. موصل أنثى Phoenix ذو 4 سنون بسلك أزرق بأسلاك أقصر
+                يتصل بها الحامل بأول موصل Phoenix ذكر ذي 4 سنون من الأسفل.
+                /
+                يتصل الموصل الأنثوي Phoenix المكون من 4 سنون والذي يوجد عليه الحامل بأول موصل Phoenix ذكر ذي 4 سنون من
+                الأعلى. الموصل الأنثوي Phoenix الأحمر ذو الأربعة أسنان مع الأسلاك الأطول التي يتم توصيل الحامل بها يتصل
+                بموصل Phoenix الذكر الثاني المكون من 4 سنون من الأعلى.
+                /
+                موصل فونیکس العنقاء الأنثوي الأحمر ذو الأربعة سنون ذو الأسلاك الأقصر الذي يتصل به الحامل متصل بموصل
+                العنقاء الذكر الثالث المكون من 4 سنون من الأعلى.
+                /
+                /
+                ثم شد جميع أسلاك التيار والجهد المثبت بإبزيم الحزام.
+                /
+                وصلة كابل لوحة مسطحة 25 * 2 - 3.7 سم جانب واحد بدون مفتاح والجانب الآخر بمفتاح
+                يتم توصيل هذا الكبل تقريبًا في منتصف وأسفل اللوحة الأمامية. قم أولاً بتوصيل جانب التبديل بوحدة التبديل ،
+                ثم قم بتوصيل جزء التبديل بـ IDC Latch على اللوحة وأغلق المفاتيح تمامًا.
+                /
+                كيفية توصيل كبل حامل IDC باللوحة الأمامية
+                قم بتثبيت حامل IDC للقاعدة الطويلة على IDC المتصل بوحدة التبديل وقم بتوصيل جانبي قواعد الحامل بكلا جانبي
+                IDC.
+                /
+                عند توصيل الكبل المسطح ، انتبه إلى النتوء الموجود على كابل IDC والأخدود الموجود على وحدات IDC.
+                أغلق الكبل المسطح 25 * 2-5 سم كلا الجانبين بدون تبديل
+                يربط هذا الكبل المسطح الجانب الكامل لوحدة التحويل بالجانب غير المكتمل لوحدة مكبر الصوت.
+                /
+                قم بتركيب حاملي مكبر للصوت وحاملي تبديل على الدرجی الوسطى للعلبة
+                يجب وضع الحوامل على القضبان ووضع الأخاديد المثبتة عليها على الوحدة واللوحة الرئيسية ، وبعد ذلك يجب تشريب
+                كل حامل ببراغي 16 * 5/2 مشرب بمادة لاصقة لولبية جنبًا إلى جنب مع غسالة مسطحة على الحامل والقضبان الوسط
+                مغلق ومحكم. يوضح الشكل أدناه موقع وتوصيل الحوامل بالوحدات والقضيب الأوسط.
+                /
+                تركيب حامل حامل الوحدة ولوحة التحويل الرئيسية
+                يتم توصيل هذا الحامل بجدار العلبة من جانب واحد ويتم توصيله بجسم العلبة بواسطة مسامير 2 4 * 8 مشربة بغراء
+                لولبي خاص جنبًا إلى جنب مع المكسرات وغسالات الزنبرك ومسطحة. ومن ناحية أخرى ، يتم توصيله بالوحدة ولوحة
+                التحويل الرئيسية.
+                /
+                تثبيت حامل لوحة مكبر الصوت ولوحة النوتریک
+                هذا الحامل متصل بجدار العلبة من جانب واحد بواسطة مسامير 2 4 * 8 مشربة بغراء خاص جنبًا إلى جنب مع
+                الصواميل وغسالات الزنبرك ومسطح بجسم العلبة. من ناحية أخرى ، يتم وضع الأخاديد المثبتة في هذا الحامل على
+                الوحدة واللوحة الرئيسية لمكبر الصوت. يتم توصيل لوح الجوز أيضًا بهذا الحامل بواسطة مسامير 1 × 3 مشربة
+                بغراء خاص جنبًا إلى جنب مع المكسرات وغسالات الزنبرك. اقلب الجهاز رأسًا على عقب بحيث تكون اللوحة الخلفية
+                للجهاز متجهة لأعلى.
+                /
+                أحكم ربط 2 من مسامير المنفذ RS232
+                /
+                أغلق مغسلة شمسية وصامولة ذهبية في مقبس هوائي GPS
+                أغلاق الأبواب
+                يجب تثبيت الباب مع القاعدة في الجزء السفلي من الجهاز والباب بدون قاعدة في الجزء الموجود بالجهاز. أدخل
+                الأبواب في الأخاديد السفلية الأخاديد في إطار اللوحة الأمامية.
+                /
+                توصيل الأسلاك الأرضية بباب الجهاز
+                على جانبي العلبة ، يتم توصيل سلكان أرضيان طويلان بالجسم. اربط كل منهما بالباب على جانبك واسحب السلك
+                قليلاً للتأكد من أنه آمن.
+                /
+                /
+                إغلاق كامل للأبواب
+                يجب تثبيت الأبواب والقواعد في مكانها وتثبيت براغي ذات نجمتين على كل جانب. ستحتاج إلى مفك براغي على شكل
+                نجمة T20 لربط البراغي في هذا القسم.
+                /
+            </Search>
+        </contant>
+
+        <contant id="Introducing_the_Device_and_Equipment">
+            <Search>التعرف علی الجهاز و المعدات INTRODUCING
+                لإزالة الجهاز من الحقيبة ، عليك أن تضع المقبض في وضع 45 درجة بالضغط على المقبض وإخراجه من الحقيبة.
+                /
+                لتغيير حالة مقبض الجهاز ، من الضروري الضغط على الأزرار الجانبية للجهاز في وقت واحد ثم تغيير الحالة.
+                بمجرد وضع الجهاز على السطح المقصود ، يمكن وضع مقبض الجهاز على الجهاز بالضغط على زر الضغط.
+                /
+                يمكنك أيضًا وضع موضع المقبض أسفل الجهاز واستخدامه كقاعدة. بالإضافة إلى ذلك ، يمكن استخدام القواعد
+                المثبتة أسفل الجهاز لهذا الغرض.
+                /
+                فی أسفل الجهاز یتم وضع أخاديدا للتكييف ، وعند وضع الجهاز على السطح يجب الحرص على عدم انسداد هذا الجزء
+                تحت أي ظرف من الظروف.
+                /
+                تتكون اللوحة الأمامية للجهاز من المخرجات والمدخلات وأضواء حالة الجهاز وزر التشغيل / الإيقاف.
+                /
+                إذا كان الضوء الأخضر للترحيل الرئيسي main relay فی حالة التشغيل ، فهذا يعني أن جميع المفاتيح الرئيسية
+                للجهاز فی حالة التشغيل ایضا .
+                /
+                عندما يضيء المصباح الأخضر "CONNECTED" ، فهذا يشير إلى أن الجهاز متصل بشكل صحيح بالبرنامج عبر جهاز
+                كمبيوتر أو هاتف محمول.
+                /
+                إذا كان الضوء الأحمر لـ "ERROR" مضاءً ، فهذا يعني أن هناك مشكلة بالجهاز وأنه قد توقف عن العمل. طالما لم
+                يتم حل المشكلة ، فسيظل هذا المصباح مضاءًا ولن يعمل الجهاز.
+                /
+                تسمح مجموعتان من الجهد A و B هذه الامکانیة للمستخدم ، حتى تتسلم 150 فولت تيار متردد و 212 فولت تيار
+                مستمر في جميع المراحل الأربع في وقت واحد بدقة 10 مللي فولت وحد أقصى تيار يبلغ 0.4 أمبير تيار متردد و 0.6
+                أمبير تيار مستمر وأيضًا حتى 2 أمبير استقبال في الوضع العابر. مع التغییر فی الغطاء يمكن استقبال ما يصل
+                إلى 450 فولت تيار متردد كمرحلة واحدة من الجهاز. من الممكن أيضًا زيادة الطاقة الناتجة عن الفولتية عبر
+                تغيير الغطاء وموازاة المصدرين الحاليين ، وتزويد المستخدم بجهد تيار متردد 150 فولت بحد أقصى للتيار يبلغ
+                0.8 أمبير.
+                /
+                تسمح المجموعتان الحاليتان A و B للمستخدم بتلقي ما يصل إلى 32A في جميع المراحل الست في وقت واحد أو ثلاث
+                مراحل 64A. اضافة على ذلك ، من خلال تغيير الأسلاك ، يمكن استقبال ما يصل إلى 128 أمبير أحادي الطور من
+                الجهاز.
+                /
+                عند مخرج "Auxiliary DC" ، يمكن ضبط جهد التيار المستمر من 0 إلى 212 فولت بشكل دائم. هذا الجهد مستقل عن
+                الاختبار ويمكن استخدامه لتشغيل أجهزة أخرى مثل المرحلات.
+                /
+                هذا الجزء هو نقطة اتصال الكابل المدمج. قيم التيار الناتج والجهد لهذا المنفذ هي نفس قيم منافذ الجهد
+                والتيار الموصوفة سابقًا.
+                /
+                يمكن استخدام المخرجات الثنائية لتوليد إشارات رقمية أو كمفتاح. يوجد خلف هذا الجزء مرحلات 10 أمبير.
+                /
+                المدخلات التناظرية للجهاز تمتلک على استقبال الإشارات التناظرية والرقمية. يمكن تنشيط جميع المدخلات
+                الثمانية في وقت واحد. يمكن لهذه المدخلات قراءة الجهد في ثلاثة مستويات للجهد 4.5 و 30 و 188 فولت ، بدقة 1
+                مللي أمبير و 3 مللي أمبير و 10 مللي فولت وعرض شكل الموجة الخاصة بهم.
+                /
+                قسم " Analog DC Input" " قادر على قياس الفولتية حتى 200mV بدقة 50µV والتيار حتى 500mA بدقة 50µA.
+                /
+                المكونات المختلفة الموجودة على ظهر الجهاز بشكل عام ، هي:
+                منفذ Earth
+                قاطع تیار
+                مزود الطاقة
+                منفذ RS232
+                منفذ USB
+                الجی بی اس
+                مضيف USB
+                مفاتیح LAN و Wi-Fi
+                منفذ LAN
+                يستخدم هذا المنفذ لحماية اتصال الجسم والكابل الأرضي بالجهاز متصل بهذا الجزء.
+                /
+                في هذا الجزء ، يتم استخدام قاطع الکهرباء 15 أمبير -250 فولت لحماية الجهاز.
+                /
+                في هذا الجزء يقع منفذ الطاقة الخاص بالجهاز. كابل الطاقة بالجهاز متصل بهذا الجزء.
+                /
+                يستخدم منفذ RS232 بشكل أساسي لإعادة ضبط عنوان IP للجهاز وتحديث firmware. للقيام بذلك ، تحتاج إلى توصيل
+                دونجل RS232 ، وهو جزء من الجهاز ، وإجراء العمليات الضرورية الموضحة في الرسوم المتحركة التالية.
+                /
+                في هذا القسم ، باستخدام المفتاح ، يتم تحديد بروتوكول الاتصال بين الجهاز والكمبيوتر المحمول. إذا كان
+                المفتاح يعمل ، يكون الاتصال عبر Wi-Fi وإذا كان المفتاح معطلاً ، يكون الاتصال عبر شبكة LAN. يتم استخدام
+                منفذ LAN الموجود أسفل هذا المحول للاتصال المذكور. تم وصف إعدادات الكمبيوتر المحمول لتوصيل كمبيوتر محمول
+                بالجهاز في الرسوم المتحركة التالية.
+                /
+                يتم توصيل هوائي GPS بهذا القسم ، الذي يستخدم لمزامنة الوقت لجهازين لإجراء اختبار طولي .
+                /
+                يوجد داخل الكيس الأسود وصلة أحادية الاتجاه من سلك إلى أنثى ، ومشبك سحلية ، وسلك اختبار 30 سم ، وسلك
+                اختبار 10 سم ومقبس اختبار 4 مم ، ومشبك حزام ومقبس اختبار بقطر 4 مم .
+                المعدات الأخرى المضمنة مع الجهاز هي كبلات الاتصال ، والتي تستخدم لتوصيل المرحلات وحقن الجهد أو التيار.
+                يحتوي أحد جانبي الكبل على رأس ثابت للاتصال بالجهاز ويستخدم الجانب الآخر ، الذي يحتوي على درع بلاستيكي
+                قابل للإزالة ، لتوصيل الجهاز.
+                کبل LAN
+                الكبل الأزرق الموجود في الصورة والذي يستخدم للتواصل بين الجهاز والكمبيوتر المحمول.
+                كابل أرضي
+                الكبل الأصفر هو أيضًا كبل أرضي ، تم عرض اتصاله بالجهاز من قبل. يتم توصيل هذا الكبل بالجهاز من جانب واحد
+                والاتصال الأرضي من جانب المشبك.
+                الكبل الأسود على اليمين هو كبل الطاقة واليسار هو كبل هوائي GPS. يستخدم هذا الهوائي للاختبارات من طرف إلى
+                طرف. يستخدم هوائي GPS لمزامنة وقت جهازين للاختبارات الطولية
+                المسلسل دونجل:
+                يستخدم هذا الدونجل لإعادة ضبط الجهاز. تم توصيل الدبابيس الثانية والثالثة لهذا الدونجل معا ، فی حالة عدم
+                الوصول إلى هذا الدونجل ، فيمكنك إجراء عملية إعادة الضبط عن طريق توصيل الدبابيس 2 و 3 من منفذ RS232 على
+                الجزء الخلفي من الجهاز.
+                صندوق مكثف
+                في هذه المجموعة ، تم تثبيت ثلاثة مكثفات 10 مللي أمبير 10000 ميكروفاراد ، والتي تستخدم كمرشحات في
+                اختبارات المعدات.
+                كابل مدمج أو نوتریک
+                يحتوي هذا الكبل على 6 أسلاك خروجیة من أحد طرفيه وجزء واحد من الطرف الآخر متصل بالجهاز. لتوصيل هذا الكبل
+                ، أدخل أولاً فوهة الكبل المركب بشکل موضح في الصورة. بعد ذلك ، بعد إدخال كابل نوتریک ، قم بتدويره إلى
+                اليمين حتى يتم تثبيت الدبوس المعدني في مكانه. لفصل كابل نوتریک ، اسحب الفوهةوأدره إلى اليسار. بعد اكتمال
+                الدوران ، يمكن اخراجه کاملا .
+                هناك عدة ملصقات ملحقة بجوانب الجهاز. يتضمن الملصق الأول معلومات الاتصال لدعم الجهاز.
+                يحتوي الملصق الثاني أيضًا على serial number والمعلومات الفنية للجهاز.
+                حقیبة حمل تستر
+                تم تصميم هذه الحقيبة لسهولة حمل الجهاز.
+                لوضع الجهاز داخل هذه الحقيبة ، يجب وضع مقبض الجهاز في وضع عمودي ويجب وضع الجهاز داخل الحقيبة وإغلاقه
+                أخيرًا في الحقيبة.
+                يوجد في الجزء الأمامي والخلفي من هذه الحقيبة أماكن لوضع المعدات التي تأتي مع الجهاز.
+                يوجد داخل حقيبة الظهر مع الجهاز ثلاثة خيوط من كابل بطول 7 أمتار و 8 مشابك للاختبارات المتعلقة بالمحولات
+                ومفاتيح الطاقة ، بالإضافة إلى عدة مشابك لتثبيت الاتصال بين الكابلات.
+            </Search>
+        </contant>
+
+        <contant id="Software_Installation">
+            <Search>ترکیب البرمجیة
+                يتم تقديم برنامج وبکو في نسختين "Stable" و "Test". في الإصدار "الاختباري" ، تم إجراء أحدث التغييرات على
+                البرنامج ، وكما يوحي الاسم ، فهو إصدار تجريبي وقد يحتوي على أخطاء برمجية. بمجرد إصلاح هذه الأخطاء ، يتم
+                توفير إصدار "ثابت" يعمل على إصلاح مشكلات البرامج ويمكن استخدامه بسهولة ، موضحًا أنه قد لا يحتوي على جميع
+                ميزات الإصدار التجريبي. لاحظ أنه يمكن تثبيت الإصدارين "الاختباري" و "المستقر" في نفس الوقت دون أي مشاكل.
+                لتنزيل أحدث إصدار من "Test" و "Stable" ، يجب الرجوع إلى موقع www.vebko.ir ، قسم البرامج.
+                قبل تنصیب البرنامج ،تجدر الإشارة إلى أنه في حالة تنصیب نسخة من البرنامج في النظام المستخدم ، فلا حاجة
+                الی حذف البرنامج لتنصیب البرنامج الجديد ، ويتم تنصیبه تلقائيًا بواسطة الإصدار الجديد من البرنامج. لتنصیب
+                البرنامج یتم تنفیذ ملف Test exeو لمتابعة التنصیب فانقرعلی next. و يجب تنصیب برنامج WinPcap على النظام
+                المستخدم قبل تثبيت البرنامج على النظام.
+                /
+                /
+                انقر علی خیارnext للمرة الاخری .و رسالة WinPcap 4.1.3 Setup هي أن هذا البرنامج مثبت بالفعل على النظام
+                المستخدم ، والذي إذا لزم إعادة تثبيته يتم النقر فوقه على خيار Ok ، وإلا على خيار Cancel لکن عند عدم
+                التنصیب علی النظام المستخدم یتم عرض خیار Install یجب تنصیب برمجیة WinPcap و الحال حدد خیار I agree و
+                النقر علی Install لاحظ أن تثبيت برنامج "AMPro" يستغرق بضع ثوان و الحال انقر علی خیار Runحتی یتم تنفیذ
+                البرمجیة و قبل بدایة البرمجیة و لاستکمال مراحل التنصیب فی الصفحة الرئیسیة للبرمجیة فی قسم Security و مع
+                النقر علی خیار Open Source Location یتم فتح طریق تنصیب البرمجیة و فی الصفحة نقر بزر الماوس الأيمن فوق
+                ملف AMPro Application.exe حدد الخيار "Properties" و فی فوهة Compatibility یتم النقر علی خیارRun this
+                program as an administrato ثم النقر علی ملف AMPro APP Luncher.exe" و فی فوهة Compatibility تم النقر علی
+                خیار Run this program as an administrator
+                /
+                /
+                /
+                بعد القيام بذلك ، فتكتمل عملية تنصیب البرنامج ويمكنك استخدامه لإجراء الاختبارات الخاصة بك.
+                /.
+            </Search>
+        </contant>
+
+        <contant id="How_to_Connect_to_AMT105">
+            <Search>طریقة الاتصال الی الجهاز
+                ولكي تتمكن من إجراء العديد من الاختبارات مع الجهاز ، يجب توصيله من خلال جهاز كمبيوتر أو حاسوب محمول. قبل
+                البدء في العمل بالجهاز ، يجب توصيل سلك التأريض الخاص به من الجزء الخلفي للجهاز. لاحظ أنه إذا كان المقبس
+                به أرضي ، فلا داعي لتوصيل السلك الأرضي من الجزء الخلفي للجهاز. ثم يتم توصيل سلك الطاقة بالجزء الخلفي من
+                الجهاز. بعد توصيل كبل الطاقة بالضغط على زر الطاقة على اللوحة الأمامية ، يتم تشغيل الجهاز. عند تشغيل
+                الجهاز ، تضيء 8 مصابيح "BINARY INPUT" خضراء الصف السفليو مصباحی "Analog DC Input". اعلی بالطرف الیمین
+                هناك طريقتان للاتصال بالجهاز ، "LAN" و "Wi-Fi" اعتمادًا على نوع الاتصال .نظرا الی نوع الاتصال المطلوب
+                ،یتم ضبط المفتاح الواقع علی وراء اللوح .لمفتاح الاتصال LAN یتم توصیل راس کبل LAN الی الجهاز و راس اخر
+                الی الحاسوب المحمول لذا یتم الاتصال بین الجهاز و الحاسوب و تغیر المفتاح من حالة Wi-Fi الی LAN یتم تشغیل
+                مصباح LAN علی الجهاز و مصباح LAN علی الحاسوبیتم ضبط اتصال LAN للحاسوب فقط مرة اخری و یتم قبل اول اتصال
+                .لتم هذه الاعدادات یرجی الذهاب الی قسم "Control Pane و فتح Network And Sharing Center.
+                /
+                فی هذه الصفحة یتم فتح الصفحة الاخری مع النقر علی خیار Change Adapter Setting. فی هذه الصفحة یجد صفحات
+                مختلفة و لتم اعدادات LAN انقر نقرا مزدوجا علی قسم Ethernet . فی الصفحة المفتوحة انقر نقرا مزدوجا علی
+                Internet Protocol Version 4. فی هذا القسم و فی صفحة IP Address یرجی ادخال عبارة 192.168.1.20 و تغلق
+                الصفحة ثم فتح صفحة بدایة برمجیة AMPRO و فی هذه الصفحة یتم فتح صفحة جدیدة مع النقر علی خیار Setting.
+                /
+                في هذه الصفحة ، في الجزء الرابع من حقل "IP" ، يتم إدخال آخر رقمين من الرقم التسلسلي للجهاز. انقر فوق
+                الزر " Connect " للاتصال بالجهاز. إذا تم توصيل إصدار جديد بالجهاز ، يتم تحديث " Firmware " للجهاز مرة
+                واحدة وبعد ملء الشريط الأخضر ، سيتم توصيل الجهاز بعد بضع ثوان. يجب ضبط المفتاح الموجود في الجزء الخلفي
+                من الجهاز على "Wi-Fi" للاتصال عبر "Wi-Fi". ثم حدد هوائي الكمبيوتر المحمول المرتبط بالجهاز من قائمة هوائي
+                "Wi-Fi". رمز الاتصال بهذا الهوائي هو الرقم التسلسلي الذي يتم إدخاله على الملصق الموجود بجوار الجهاز.
+                بمجرد اكتمال الاتصال ، انقر فوق " Setting " من صفحة " Start " للبرنامج. في هذه الصفحة ، في الجزء الرابع
+                من حقل "IP" ، أدخل آخر رقمين من الرقم التسلسلي للجهاز. انقر فوق الزر " CONNECT " للاتصال بالجهاز.
+                / /
+            </Search>
+        </contant>
+
+        <contant id="Simultaneous_Connection_of_Several_Testers">
+            <Search>اتصال متزامن بعدة أجهزة
+                في صفحة Preferences و فوهة Available Devices يمكن للمستخدم عرض جميع الأجهزة المتصلة من خلال بروتوكولات
+                مختلفة. انقر علی " Start Search"، وبعد بضع ثوانٍ سيتم عرض قائمة " Network Adaptor option " للنظام في حقل
+                القائمة المنسدلة " Interfaces ".
+                /
+                مع ای نقر علی "Network Adaptor " یتم عرض قائمة بالأجهزة المتصلة بالكمبيوتر المحمول مع كافة معلومات
+                الاتصال الخاصة به. إذا كان المستخدم لا يعرف اسم " Network Adaptor " الخاص به ، فعليه الانتقال إلى صفحة
+                Control Panel " والنقر على خيار " Network and Sharing Center " ، على الجانب الأيسر من هذه الصفحة ، انقر
+                علی Change Adapter Setting ". إذا تم فصل وإعادة توصيل كابل الاتصال الخاص بالجهاز المتصل بالكمبيوتر
+                المحمول ، فسيتم تحديد " "Network Adaptor " من خلال تنشيط وإلغاء تنشيط " Connection " في هذه الصفحة.
+                /
+                /
+                بعد العودة إلى صفحة ""Available Devices ، والنقر علی ""Network Adaptor " المستخدم ، سيتم عرض اسم الجهاز
+                و "IP" الخاص به إلى جانب معلومات الاتصال الأخرى. إذا لم يكن لدى المستخدم حق الوصول إلى "IP" للجهاز ،
+                فإنه باتباع هذه الخطوات يمكنه العثور عليه ولا داعي لـ " Reset " IP الخاص بالجهاز.
+                /
+                في فوهة "Connection & Firmware ، يتم إجراء إعدادات توصيل الجهاز وتغيير "IP" و " Update Firmware تکون
+                ميزات هذا البرنامج الاتصال بالعديد من الأجهزة في وقت واحد. للقيام بذلك ، انقر علی الزر "Plus" الأخضر ،
+                وسيتم إضافة صف جديد إلى هذا الجدول. في كل صف من المعلومات ، يوجد " Connection " يجب أن يكون مختلفًا عن "
+                Connection " الأخرى. في هذه الصفحة ، في الجزء الرابع من حقل "IP" ، يتم إدخال آخر رقمين من الرقم التسلسلي
+                للجهاز.
+                /
+                عند الاتصال بأجهزة متعددة من خلال برمجیة واحدة ، تجدر الإشارة إلى أنه فيما يتعلق بـ " Network Adaptor "
+                ، يجب أن يكون لكل "اتصال" "عنوان MAC Address " و "IP" فريد. للقيام بذلك ، يجب عليك أولاً الاتصال به عن
+                طريق إدخال "IP" للجهاز الأول ، وبالنقر على السطر الثاني وإدخال "IP" للجهاز الثاني ، يجب أيضًا توصيله به.
+                إذا كانت "عناوين MAC" موحدة ، فقم بإجراء تغييرات صغيرة عليها وطبق هذه التغييرات بالنقر علی " Set to AMT
+                "سوف یتم اعمال هذه التغییرات .
+                /
+                بعد الاتصال بعدة أجهزة بشكل صحيح ، يمكن إجراء عدة اختبارات في وقت واحد مع الأجهزة المتصلة. على سبيل
+                المثال ، إذا كانت الغرفتان "AMT Sequencer" و "AMT Distance" مفتوحتين ، یمکن اجراء اختبارین مع جهازین عن
+                طريق تحديد اتصال "AMT" في غرفة "AMT Sequencer" واختيار اتصال "AMT1" بغرفة "AMT Distance" .و یمکن اختبار
+                مرحلتین فی وقت واحد .
+                /
+            </Search>
+        </contant>
+
+        <contant id="Resetting_IP_Address">
+            <Search>إعادة تعيين IP للجهاز
+                عندما تكون مؤشرات LED لجميع الثنائيات قيد التشغيل أو لا تتصل بالجهاز وفقًا للإعدادات ذات الصلة ، يجب
+                عليك إعادة تعيين جهاز IP باستخدام الدونجل. قبل إعادة تعيين عنوان IP الخاص بالجهاز ، من الضروري التأكد من
+                إيقاف تشغيل الجهاز. بعد ذلك ، يتم توصيل دونجل RS232 بمنفذه المحدد في الجزء الخلفي من الجهاز.
+                /
+                بعد تشغيل الجهاز ، سترى أن ضوء الخطأ يبدأ في الوميض.
+                /
+                بعد بضع ومضات ، يكون هناك توقف مؤقت ثم يبدأ في الوميض مرة أخرى. بعد تكرار هذا ثلاث مرات ، يجب على
+                المستخدم إيقاف تشغيل الجهاز وإزالة دونجل RS232 من اللوحة الخلفية.
+                /
+                في هذه الحالة ، تتم إعادة تعيين عنوان IP للجهاز وتغيير تسلسله إلى 199 للاتصال بشبكة Wi-Fi. بعد تشغيل
+                الجهاز في صفحة " Setting " ، أدخل 199 في حقل IP في القسم الرابع من هذا الحقل وقم بتوصيل الجهاز
+                بالكمبيوتر المحمول.
+                /
+                لاحظ أنه إذا لم يكن لديك دونجل أو حتى منفذ RS232 ، فيمكنك استخدام سلك رفيع للقيام بذلك. كما يتضح ، يكفي
+                توصيل الدبابيس 2 و 3 بسلك رقیق.
+            </Search>
+        </contant>
+
+        <contant id="Updating_Firmware_of_Device_Manually">
+            <Search>تحدیث FIRMWARE للجهاز بشکل یدوی
+                من أجل " Update " Firmware للجهاز يدويًا ، يجب أولاً إيقاف تشغيل الجهاز.‬
+                ثم في صفحة " Preferences " ، انقر على " Disconnect" " حتى لا يتعرض البرنامج لضغوط بعد تشغيل الجهاز.
+                /
+                للبدء ، يتم توصيل دونجل "RS232" بمنفذه المخصص في الجزء الخلفي من الجهاز ، ويتم الاتصال بين الجهاز
+                والكمبيوتر المحمول عبر كابل "LAN".‬
+                /
+                نلاحظ أنه بعد تشغيل الجهاز ، يومض ضوء "ERROR" الموجود على اللوحة الأمامية للجهاز.
+                /
+                فی الصفحة الرئیسیة للبرمجیة یتم النقر علی Update Firmware in Flash Mode.
+                سيتعين عليك بعد ذلك الانتظار حتى يمتلئ الشريط الأخضر وستظهر رسالة. ‌ ثم انقر فوق "OK"لإكمال تحديث "
+                Firmware.
+                /
+                ثم يتم إيقاف تشغيل الجهاز وفصل الدونجل "RS232" عن الجهاز.
+            </Search>
+        </contant>
+
+        <contant id="General_Setting_of_Rooms">
+            <Search>الإعدادات العامة لـ"ROOMS"
+                تحتوي صفحة " Setting" للبرنامج على 4 علامات تبويب رئيسية. تحتوي علامة تبويب "Room" على مجموعة من الميزات
+                لمختلف " Rooms". في قسم " Date-Time"، يمكنك تحديد نوع التاريخ المستخدم في تقرير الإخراج بالفارسي أو
+                الميلادي. باستخدام الخيارات الثلاثة الأخرى في هذا القسم، يمكنك عرض اسم الشهر واسم الأسبوع والملي ثانية
+                في التقرير.
+                /
+                فی غرف مثل " AMTDistance" و "AMTOvercurrent" بجانب كل من " Fault Types"، کُتبت الأرقام التي تشير على
+                التوالي إلى عدد نقاط الاختبار، وعدد النقاط "التي تم اجتيازها Pass"، وعدد النقاط "التي تم فشلها Fail" فی
+                الاختبار، وعدد النقاط الخارجة من نطاق الجهاز و عدد النقاط غير المختبرة. وفقا لهذا الشرح، فإن إلغاء تحديد
+                أي من الخيارات في قسم " Show/Hide Test Counters" سيمنع عرض عدد النقاط المرتبطة بهذا الخيار.
+                /
+                /
+                في قسم " Report" في حقل " Report Refresh Interval"، يتم تحديد "Report " وقت التحديث. في حقل " Template
+                Report Package "، يتم إجراء الإعدادات الافتراضية لـ "Reports ". في قسم "Extra Tools "، عند النقر علی
+                "Report Generator " تفتح صفحة " PDF Report Creator " حيث يمكنك "Import " ملفات الاختبار التي تريد الحصول
+                على التقرير. أثناء النقر على " Remove Signature " یتم فتح صفحة " Remove Signature from Report "، والتي
+                یمکن حذف التوقيعات المضافة فی " Reports" دون الحاجة إلى فتح ملفات الاختبار. في قسم " Template"، يتم ضبط
+                إعدادات "Device " لصفحة " Test Object" والإعدادات الخاصة بعرض الأرقام في " Decimal Places ".
+                /
+                من خلال تحديد خيار " Auto Save "، يحفظ البرنامج آخر التغييرات التي تم إجراؤها على صفحة الاختبار وفقًا
+                للوقت المحدد في حقل " Interval". كما يتم تخزين هذه الملفات في المسار المحدد في مربع Directory في قسم
+                History والذي يتم إدخال الحد الأقصى للحجم المحجوز لهذه الملفات والحد الأقصى لطول الوقت الذي يتم فيه
+                تخزين هذه الملفات في النظام على التوالي في الحقلين Max Size و Max Time، ويمكن للمستخدم تغيير هذه القيم
+                كما يريد. سيتم إلغاء تحديد أي من هذه الخيارات سيتم رفع هذا القيد أيضا. يؤدي هذا إلى حفظ صفحة الاختبار
+                ومعلومات المستخدم إذا تم إغلاق صفحة البرنامج لأي سبب من الأسباب.
+                /
+                في حقل القائمة المنسدلة لقسم "Alert Tone on Hardware Error"، يمكنك تحديد صوت تنبيه لخطأ في الجهاز. في
+                قسم "Style of Tables"، یتم إعدادات تحديد الجداول وتغيير حجمها في غرف مثل "Distance" و "Differential". في
+                قسم "Key Setting"، يمكن إجراء الإعدادات واستخدام مفتاح "Enter" ومفاتيح الاتجاه لنقل الخلايا في جدول. في
+                قسم "Communication Mode"، يمكنك تحديد اتصال غرف وصفحات البرامج المختلفة من "Service System" و"Integrated
+                System". تم تصميم قسم "Appearance Setting of Groupbox" لتخصيص عرض البرنامج. تتم هذه الإعدادات في فئتين
+                عامتين " Border" و " Text"، والتي تستخدم على التوالي لتخصيص مربعات كل قسم ولون وخط النص في البرنامج. في
+                مقاطع الفيديو التعليمية التالية، سيتم شرح جميع العناصر المذكورة مع التفاصيل وكيفية إعدادها.
+                /
+                /
+                /
+                /
+            </Search>
+        </contant>
+
+        <contant id="General_Setting_of_Rooms_part2">
+            <Search>الاعدادات العامة للغرف ، قسم 2
+                في قسم " Templates " ، يؤدي النقر فوق الزر " Device " إلى فتح صفحة جديدة تسمى " Device Settings " يتم
+                فيها إجراء الإعدادات الافتراضية لـ " Device " إذا تم إجراء تغييرات في هذا القسم. بالنقر فوق " Save to
+                Template "، سيتم حفظ الإعدادات التي تم إجراؤها على هذه الصفحة کـ template . من خلال تأكيد هذه الإعدادات
+                وفتح إحدى الغرف والانتقال إلى صفحة" Test Object "، في" Device Setting "، يمكن للمستخدم إعادة تعيين
+                الإعدادات المحفوظة باسم " template " بالنقر فوق " Load Template " وتأكيده.
+                /
+                يؤدي النقر فوق الزر " Decimal Places " إلى فتح صفحة تسمى " Number of Decimal Places Settings " حيث يتم
+                تحديد دقة الأرقام وعدد الأرقام التي يمكن عرضها لكل معلمة. في حقل " Item Type " ، يتم تحديد القسم أو
+                الغرفة المطلوبة. وفي حقل " Sample Value " ، يتم إدخال رقم على سبيل المثال. يعرض عمود " Parameter Name "
+                اسم المعلمة ويعرض عمود " Absolute Unit " وحدة المعلمة. يحدد عمود "عامل الهندسة المطلق" عدد أرقام الرقم
+                التي يتم عرضها. على سبيل المثال ، إذا تم إدخال الرقم 7 في هذا العمود ، فسيتم عرض ما يصل إلى 7 أرقام من
+                الرقم المكتوب في حقل ""Absolute Eng. Factor ". على سبيل المثال ، إذا تم إدخال الرقم 7 في هذا العمود ،
+                فسيتم عرض ما يصل إلى 7 أرقام من الرقم المكتوب في حقل "نموذج القيمة".
+                يتم اعتبار جميع الإعدادات التي تم إجراؤها في هذه الصفحة بشكل افتراضي في هذا الجزء من البرنامج ويتم
+                تطبيقها في غرف مختلفة. على سبيل المثال ، إذا حددنا " Item Type " كـ "Sequencer" وقمنا بإجراء تغييرات على
+                هذه الصفحة وقمنا بتأكيدها بالانتقال إلى غرفة "Sequencer" والنقر على خيار "Decimal Places" ، فسترى أن
+                الإعدادات قد اكتملت. هذا يتم توفير قسم افتراضيًا. في قسم " Alert Tone on Hardware Error " في صفحة "
+                Preferences " ، هناك العديد من الملفات الصوتية التي يمكن استخدامها كصوت تحذير عند حدوث خطأ في الجهاز.
+                /
+                /
+                من خلال تنشيط الخيار Automatic " في قسم " Style of Tables " ، يتم تحديد أبعاد خلايا الجدول تلقائيًا
+                بواسطة البرنامج ولا يمكن للمستخدم تغيير الأبعاد. من خلال تفعيل الخيار " Manual" " ، يمكن للمستخدم تغيير
+                أبعاد خلايا الجدول. في علامة التبويب المنزلق ، يقوم المستخدم بتعيين الإعدادات ليتم تطبيقها تلقائيًا أو
+                يدويًا. في حقل " Height of table cells " ، يتم تعيين ارتفاع كل خلية بالبكسل. على سبيل المثال ، من خلال
+                تحديد الوضع " Manual " وخيار " column header " وتأكيده ، سترى " shot " في جدول نقاط distance " في روما ،
+                حيث يكون عرض كل عمود هو نفسه " header رأس هذا العمود ، ولأن تحديد الوضع " Manual " ، يمكن للمستخدم تغيير
+                أبعاده. إذا تم تحديد الوضع " automatic " بدلاً من " Manual " ، فلن يكون من الممكن تغيير الأبعاد. في قسم
+                "إعداد المفاتيح Key Setting " ، من خلال تنشيط الخيار Enter Like Tab in Forms " ، يختار المستخدم استخدام
+                مفتاح "Tab" نفسه في جداول المفاتيح "Enter" للتنقل عبر الخلايا وللتمكن من الوصول إلى الخلايا نقل. من خلال
+                تحديد الخيار "Arrow Like Tab in Forms" ، يختار المستخدم أن يكون قادرًا على نقل الخلايا في الجداول
+                باستخدام مفاتيح الأسهم.‬‬
+                /
+                في قسم " Communication Mode " ، عن طريق تحديد خيار " Service System " ، سيتم تنفيذ كل من روم الصفحة
+                الرئيسية للبرنامج ، إذا تم تنفيذها ، كملف exe منفصل ، وستعمل مع النوافذ. ستكون كل غرفة مستقلة عن النوافذ
+                من الغرف الأخرى. سيؤدي ذلك إلى تقليل استخدام موارد النظام. ولكن عن طريق تحديد خيار " Integrated System "
+                إذا قمت بتشغيل عدة روم ، يتم تشغيلها جميعًا في ملف exe واحد. في هذه الحالة ، بالإضافة إلى استخدام المزيد
+                من موارد النظام ، إذا كانت إحدى النوافذ مفتوحة في إحدى الغرف ، فستكون الغرف الأخرى وصفحات البرامج غير
+                قابلة للاستخدام.
+                /
+            </Search>
+        </contant>
+
+        <contant id="Default_Setting_for_Report">
+            <Search>الضبط الافتراضی لـ REPORT
+                فی فوهة Room و قسمة Report فی حقل Report Refresh Interval يتم تحديد وقت تحديث التقرير في الغرفات إذا كان
+                هناك تغيير فيه. علی سبیل المثال یتم التحقیق عن معلومات الاختبار کل 5 ثوانی و فی حالة وجود التغییرات یتم
+                التحدیث عن تغییر التقریر وفی هذا القسم مع النقر علی زر Setting یتم فتح نافذة جدیدة باسم Report Setting و
+                فی قسم Item Type يمكنك تحديد الإعدادات الافتراضية للحصول على "تقرير" من أي صفحة أو غرفة
+                /.
+                /
+                /
+                في هذه النافذة ، توجد العناصر التي يمكن للمستخدم إضافتها إلى تقريره في قسم " Report Setting" ". عبر
+                اختیار الخيار الرئيسي ، يمكن للمستخدم إضافة جميع التقسيمات الفرعية إلى تقرير الإخراج الخاص به. إذا حدد
+                المستخدم بضع مجموعات فرعية فقط من الخيار الرئيسي ، فسيتم عرض المربع المجاور للخيار الرئيسي كمربع نصف
+                ممتلئ. في العمود بجوار قسم " Report Setting " ، يمكن للمستخدم تحديد تنسيق معاينة التقرير html أو pdf.
+                /
+                /
+                ان النقر فوق الزر " Advance " یسبب إلى توسیع الصفحة اکثر من قبل ويمكن تطبيق المزيد من الإعدادات على
+                التقرير. من خلال التحقق من كل عنصر من هذه العناصر ، سيتم فتح مجموعتها الفرعية ويمكن إجراء الإعدادات
+                المطلوبة. في الجزء العلوي من هذه الصفحة ، توجد خيارات سيتم استخدامها لحفظ الإعدادات التي تم إجراؤها
+                وإعادة استخدامها في المرة القادمة.
+                /
+                على سبيل المثال ، إذا تم تحديد ""Item Type"، "Sequencer وتم ضبط عناصر والموافقة عليها كعناصر افتراضية في
+                هذا القسم ، بعد الانتقال إلى " Sequencer " وتحديد خيار " Report View " من قائمة ""View " والتحقق من "
+                "report setting "، بعد تحديد خيار" Load from Template "، سترى أن نفس الإعدادات يتم توفيرها افتراضيًا
+                لهذا القسم. في قسم " Extra Tools " ، يُسمح للمستخدم بالنقر فوق الزر " Report Generator " للإبلاغ عنها
+                دون فتح ملفات الاختبار المحفوظة. سيؤدي النقر فوق هذا الزر إلى فتح صفحة تسمى "PDF Report Creator". في هذه
+                الصفحة ، من خلال النقر فوق الزر " Select Input Files " ، يمكن للمستخدم تحديد ملفات الاختبار الخاصة به
+                لتلقي التقرير. على سبيل المثال ، يتم تحديد الملف الأول. يمكن للمستخدم أيضًا النقر فوق الزر " Select
+                Input Folders " لتحديد مجلد يحتوي على عدة ملفات اختبار وإدخالها في قسم " Files " ، على سبيل المثال ، يتم
+                تحديد مجلد Vebko Test Files. يمكن أن يؤدي النقر فوق الزر " Clear " إلى حذف الملفات المستوردة للحصول على
+                تقرير الإخراج من القائمة.
+                /
+                /
+                /
+                /
+                /
+                /
+                /
+                من خلال تحديد الخيار " Open Folder after Creating PDF في قسم " Other Setting " ، بعد إنشاء تقرير ، سيتم
+                عرض المجلد الذي تم حفظ الملف فيه. في قسم " Output " ، عن طريق تحديد الخيار " Save Report in File
+                Directory " ، يمكنك حفظ ملفات التقارير في نفس المسار الذي تم استيراد الملفات منه. إذا حددت الخيار " Save
+                all Report to Selected Directory " ، يمكن للمستخدم تحديد مسار معين وحفظ جميع تقاريره في هذا المسار.
+                /
+                /
+                /
+                يوجد خياران في قسم " Overwrite File ". لتوضيح هذه النقطة ، على سبيل المثال ، في هذا القسم نقوم باستيراد
+                ملف import للحصول على التقرير. بتحديد خيار " Bypass Existing PDFs " ، إذا كان هناك بالفعل تقرير عن ملف
+                في المسار المحدد ، فلن يقوم البرنامج بإنشاء تقرير آخر لهذا الملف. يرجع فتح هذه الصفحة إلى تحديد خيار "
+                Open Folder after Creating PDF ، والذي يمكن تعطيله. يؤدي تحديد خيار " Overwrite Existing PDFs " إلى
+                استبدال التقرير السابق.
+                /
+                في قسم " Report Setting " ، عن طريق تحديد الخيار " Load Report Setting from File " ، يتم تحديد أن
+                إعدادات التقرير لنفس الملفات التي تم " load " تُستخدم لإنشاء التقارير. تحديد خيار " Load Report Setting
+                From Template " سيستخدم الإعدادات المحفوظة في "Templat" للحصول على التقارير. في قسم " Device Setting " ،
+                بتحديد خيار " Load Device Setting from File " ، يتم تحديد أن إعدادات " Device " لنفس الملفات التي "تم
+                تحميلها" سيتم استخدامها لإنشاء التقارير. في هذا القسم ، من خلال تحديد الخيار ""Load Device Setting from
+                Template " ، سيتم استخدام إعدادات Device في النموذج لإنشاء التقارير. من خلال تحديد الخيار " Include Test
+                Object Active Test " في قسم ""Report Setting of Instrument"" ، إذا تم إنشاء تقرير من ملفات اختبار
+                instrument ، فسيتم أيضًا تضمين المعلومات الواردة في علامة التبويب ""Test Object " في التقرير ضمن أي ظرف
+                من الظروف.
+                /
+                /
+                /
+                /
+                من خلال تحديد الخيار " Include Last Active Test " ، فإن ملفات اختبار المعدات التي تم حفظها وآخر اختبار
+                أجراه المستخدم لم يتم " Clear " ، عن طريق تحديد زر الاختيار " Add to Report " ، سيكون تقرير الاختبار
+                الإخراج ، ولكن إذا قام المستخدم بإرجاع نتيجة الاختبار في تقرير الإخراج ، عن طريق تحديد زر الاختيار
+                ""Bypass When Added To Report " ، فلن يضع البرنامج نتيجة الاختبار في تقرير الإخراج مرة أخرى.
+                /
+                /
+                في صفحة " Preferences " في قسم " Extra Tools " ، يؤدي النقر فوق الزر " Remove Signature " إلى فتح صفحة
+                تسمى " Remove Signature from Report " حيث يمكن للمستخدم حذف التوقيعات في تقرير الملفات التي يريدها. ببطء
+                في هذه الصفحة ، بالنقر فوق الزر " Select Input Files " ، يقوم المستخدم بتحديد ملفاته لحذف التوقيع. ولكن
+                بالنقر فوق الزر " Select Input Folder " ، يمكنك تحديد مجلد يحتوي على العديد من ملفات التقارير وإضافة
+                الملفات الموجودة بداخله إلى هذه القائمة في وقت واحد. بعد إضافة ملفات التقرير إلى القائمة. سيؤدي النقر
+                فوق الزر " Modify " إلى حذف التوقيعات في التقرير ، بالإضافة إلى المربع المحيط به والحروف المضافة إلى
+                التوقيع.
+                /
+                /
+                /
+                /
+            </Search>
+        </contant>
+
+        <contant id="Preferences_page_Directory_and_Cash_tab">
+            <Search>اعدادات DIRECTORYو CACHE للغرفات
+                تحدد فی فوهة " Directory " مسارات تخزين الملفات الافتراضية. يمكن تغيير هذا المسار الافتراضي بالنقر علی
+                أي من تنسيقات الملفات. على سبيل المثال ، يؤدي النقر المزدوج علی "Ampro-Distance Report Files" إلى إعادة
+                توجيهه إلى " Desktop ". مع الانتقال إلى غرفة " Distance " وفتح " Report View " ، والنقر على " Export
+                Report" " لحفظ ملف التقرير الحالي. يمكن ملاحظة أن مسار التخزين موجود على " Desktop ".
+                /
+                من خلال تنشيط المربعات داخل عمود ""Remember Last Location " ، يتم تحديد أنه إذا اختار المستخدم مسارًا
+                آخر أثناء حفظ الملف ، فسيتذكر البرنامج هذا المسار لحفظ الملفات. على سبيل المثال ، إذا ذهبت إلى غرفة "
+                Distance " ، ضع مسار الحفظ على محرك الأقراص "C" وحفظ الملف. يمكن ملاحظة أنه إذا حاولت إعادة حفظ ملف
+                التقرير ، فإن مسار الحفظ إلى نفس المجلد قد تغير.
+                /
+                إذا قمت بالنقر فوق الزر " Restore Selected to Defaults " في علامة التبويب " Preferences " ، فسيتم إعادة
+                تعيين التغييرات التي تم إجراؤها على المربعات المحددة في عمود " Remember Last Location " وإعادتها إلى
+                الحالة الافتراضية. على سبيل المثال ، إذا لم يتم تحديد المربعات الثلاثة الأولى ، وتم تحديد مربعين ،
+                فسيؤدي النقر علی ""Restore Selected to Defaults"" إلى إعادة هذه المربعات إلى الحالة الافتراضية.
+                /
+                إذا قمت بالنقر علی زر " Reset to Default " ، فستعود جميع الإعدادات التي تم إجراؤها في هذه الصفحة إلى
+                الحالة الافتراضية. باستخدام زر " Export " ، يمكنك حفظ الإعدادات التي تم إجراؤها في هذا القسم كملف ، بحيث
+                إذا لزم الأمر ، عن طريق الاستيراد ، يمكنك تطبيق هذه الإعدادات على صفحة أخرى. يتم تخزين الإعدادات الخاصة
+                بأجزاء مختلفة من البرنامج في العناوين المحددة في علامة التبويب "ذاكرة التخزين المؤقت Cache ". من أجل منع
+                البرنامج من التباطؤ على المدى الطويل ، يجب محو "ذاكرة التخزين المؤقت Cache ". يجب عليك استخدام زر "
+                Clear "لمسح ذاكرة التخزين المؤق Cache " للبرنامج. يفتح زر " Open Roaming Directory " المسار الذی یخزن
+                البرنامج "ذاكرة التخزين المؤقت"فیه . يمكن عرض ملفات "ذاكرة التخزين المؤقت" أو حذفها في هذا المجلد.
+                للقيام بذلك ، يجب عليك حذف كافة المجلدات.
+                /
+            </Search>
+        </contant>
+
+        <contant id="Connection_and_Firmware_tab">
+            <Search>فوهة "CONNECTION & FIRMWARE
+                في صفحة " Setting " ، تحدد علامة " Connection & Firmware " الإعدادات الخاصة بتوصيل الجهاز و ""Firmware
+                Update ". في قسم " Details " ، يتم إجراء الإعدادات المتعلقة بـ " Connection ". يُستخدم حقل "IP" للاتصال
+                بالجهاز. في الماضي ، تم استخدام آخر ثلاثة أرقام من الرقم التسلسلي للجهاز باعتباره الجزء الرابع من هذا
+                الحقل ، ولكن بدءًا من 24/4/98 ، تم استخدام آخر رقمين من الرقم التسلسلي للجهاز لهذا الغرض. يتم استخدام
+                حقول "Port"، "Subnet Mask"، "Gateway"، "DNS"لاتصالات الشبكة. بعد الاتصال بالجهاز ، يمكن تغيير هذه
+                العناصر ويمكن تسجيل هذه التغييرات بالنقر فوق " Set to AMT " .
+                /
+                "الرقم التسلسلي" غير قابل للتغيير من قبل المستخدم وبعد الاتصال بالجهاز ، سيتم كتابة آخر ثلاثة أرقام من
+                الرقم التسلسلي للجهاز في هذا القسم. يعرض حقل " Version " إصدار البرنامج المستخدم ويعرض حقل " Minimum
+                Version " الحد الأدنى من الإصدار الذي يسمح بتحديث " Firmware" .تم تكوين حقل "عنوان MAC" لتوصيل جهازين من
+                خلال برنامج واحد. إذا كان "عنوان MAC" لكلا الجهازين هو نفسه ، يجب عليك تغيير " Address Mac"،" لأحد
+                الأجهزة. "Address MAC" هو جهاز مكون من 6 أجزاء وحرفين. يؤدي تمكين الخيار "Enable Update Connection Data
+                by Device " إلى متابعة معلومات " Refresh " في هذا القسم. إذا أراد المستخدم إجراء تغييرات في هذا القسم
+                وتطبيقه ، فيجب عليه إلغاء تحديد هذا الخيار ثم النقر فوق " Set to AMT " لتطبيق هذه التغييرات.
+                /
+                زر " Connect " للاتصال بالجهاز ،
+                /
+                زر Refresh Connection لـ "Disconnect" و "Connect"للجهاز
+                /
+                زر Disconnect لقطع اتصال الجهاز
+                /
+                زر Ping Entered IP"للبحث عن صحة الاتصال عبر "LAN
+                /
+                یتم استخدام زر "Ping Wi-Fi" للبحث عن صحة اتصال الجهاز عبر Wi-Fi"
+                /
+                إذا تم الاتصال من خلال "LAN" بالنقر علی الخيار "Ping Entered IP" ، فسيكون "IP" الذي تم إدخاله في هذا
+                الحقل هو "Ping".
+                /
+                فی حالة الاتصال عبر "Wi-Fi"،مع النقر علی خیار "Ping Wi-Fi" ، "IP" "192.168.1.1" هو مختص لـ"Wi-Fi" یکون
+                جمیع الاجهزة مثل Ping.
+                /
+                تحديث " Update Firmware " هو لتحديث " Firmware " للجهاز ، والذي يتم عادةً تلقائيًا بعد الاتصال بالجهاز.
+                إذا لم يتم ذلك تلقائيًا ، فيجب استخدام خيار " Update Firmware in Flash Mode " ، والذي تم شرحه في الرسوم
+                المتحركة ذات الصلة.
+                /
+            </Search>
+        </contant>
+
+        <contant id="Device_Hardware_Setting">
+            <Search>اعدادات عتادات الحاسوب
+                یتم اجراء الاعدادات العامة المرتبطة بعتادات الحاسوب فی صفحة Preferences فوهة Hardware .فی قسم Fan mode
+                مع تحدید خیار Silent منوطا الی حرارة المفاتیح أو مقلل الحرارة الذی یتم عرضه فی المربع علی هذه الصفحة
+                فیتم تغییر سرعة Fan لکن فی حالة تحدید خیار Max.Power یتم تشغیل مروحة الجهاز بشکل دایم مع الحد الادی من
+                القدرة .
+                /
+                /
+                مع تشغیل خیار Smart Delay عند توصیل درجة الحرارة الی 55 فی غرفات التی یتم استخدام النقاط لتم الاختبار
+                مثل "Distance" و "OverCurrent"، یتم اجراء اختبار Pause بشکل تلقائی و فی شریطة سفلی لصفحة الاختبار، یتم
+                عرض رسالة Cooling و یتوقف عمله حتی توصیل الدرجة الی حرارة 45 و فی قسم "Maximum Temperature یتم تحدید
+                الحد الاکثر من الحرارة المسموحة بها لعمل الجهاز. عند زیادة حرارة الجهاز من هذا المقدار یتوقف عمل الجهاز
+                و قابلا للتغییر حتی حرارة 70 درجة لکن غیر الشروط الخاصة فلن یجب للمستخدم عن وضع الجهاز فی حرارة الاکثر
+                من 60 درجة .
+                /
+                في قسم Switch Off After Test" ، يمكن للمستخدم ضبط مفاتيح التيار والجهد لفتحها بعد ثوانٍ قليلة من
+                الاختبار. تم تعيين هذا الرقم على 5 ثوانٍ بشكل افتراضي. يمكنك زيادة هذا الوقت إلى 10 ثوانٍ. في قسم "
+                Deviation " ، يتم تحديد شروط إعلان خطأ الجهاز " Other ". بشكل افتراضي في البرنامج المحدد ، إذا كان الفرق
+                بين القيمة الفعلية لجهد الجهاز والقيمة المحددة في البرنامج أكثر من 4 فولت أو كان الفرق الحالي أكثر من
+                500 مللي أمبير ، فيجب إعطاء خطأ " other ". في قسم " Relative " ، يتم تحديد هذه القيمة كنسبة مئوية من
+                القيمة المحددة في الاختبار. في التشغيل الفعلي ، يستخدم الجهاز أقل قيمتين لرسالة الخطأ.
+                /
+                /
+                فی قسم "Binary Input Status يتم تحديد النظام الثنائي المتصل وأيهما غير متصل
+                /
+                في قسم Disable Error ، تتم كتابة قائمة الأخطاء التي قد تحدث للجهاز ويمكن تعطيلها.
+                Select All Error Other :يتم عرض هذا الخطأ عندما يكون الجهاز غير قادر على توليد التيار والجهد المطلوب من
+                قبل المستخدم. قد يكون هذا بسبب اتصال قصير لمخرجات الجهد أو دائرة مفتوحة لمخرجات التيار. من خلال فتح
+                المجال المنزلق لكل خطأ ، يمكن تعطيله لعدد من مخرجات الجهد والتيار.
+
+                Select all Error Self": قبل كل عملية Run لاختبار الجهاز بشکل تلقائی ، يقوم الجهاز بفحص أجهزته الداخلية
+                لمعرفة ما إذا كان قادرًا على توليد + 50 فولت و -50 فولت و +5 أمبير و 5 أمبير ، إذا كانت هناك مشكلة.في
+                هذه الحالة ، يعطي الجهاز خطأ المعايرة الذاتية.
+                "Error Thermal": يتم عرض هذا الخطأ عندما ترتفع درجة حرارة أجهزة استشعار الجهاز. من حين لآخر ، توجد مشكلة
+                في مستشعر درجة الحرارة لأحد المفاتيح وتظهر درجات حرارة غير معقولة مثل 800 درجة ، وفي هذه الحالة يمكن
+                تعطيل خطأ درجة حرارة هذا المستشعر في حقل القائمة المنسدلة لمواصلة العمل مع الجهاز.
+                "Error Over Current Binary 9": يمكن للأجهزة الثنائية 9 قياس التيار حتى 500 مللي أمبير. سيظهر هذا الخطأ
+                إذا كان تيار الإدخال لهذا الثنائي أكبر من هذه القيمة.
+                "Select all Error O. V. Binary": إذا كان جهد إدخال " Binary Input"" للجهاز أعلى من الحد المعين اعتمادًا
+                على الوقت المحدد له ، فإن الجهاز يعطي خطأ " Over Voltage ". على سبيل المثال ، في وضعv 4.5 ، إذا كان جهد
+                الدخل لكل من الثنائيات يتجاوز v 4.5 ، فإن الجهاز يعطي "خطأ".
+                في الحقل Times for Ignor O.V. Binary " ، يتم تحديد الحد الأقصى للوقت المسموح به لتجاهل خطأ " Over
+                Voltage ". بشكل افتراضي ، لن يعطي الجهاز "خطأ" إذا كان الوقت الثنائي "زيادة الجهد" أقل من 100 ملل ثانية.
+                /
+                أن تكون جديرة بالملاحظة لأن " Error Thermal و " Error Over Current Binary 99" هي جزء من " Error "
+                الجهاز، لن يتم حفظ تعطيلها من قبل البرنامج وأي برنامج تشغيل الوقت، إذا لزم الأمر. كونه المستخدم " Error
+                " يجب أن تفعل هذا بوعي. يتم استخدام قسم ""Check RAM " لاختبار "RAM" صحي في "AMT". في حقل " Repetition "،
+                يتم تحديد عدد سلسلة " Data " داخل "RAM" وتطهيرها إذا كان يمكن استخدام وظيفة "ذاكرة الوصول العشوائي" في
+                الجهاز. نظرا لأن عدة مرات على "RAM" هي كتابة وعمليات قراءة، في نهاية المطاف، إذا كانت هناك مشكلة في هذه
+                العملية، فسيتم تشغيل مصباح "الخطأ" على لوحة الجهاز.
+                /
+                في قسم " Earth "، يمكن لخطا " Earth " تمكين الجهاز أو إلغاء تنشيطه. إذا تم تكبير الخيار " Enable "، في
+                الاختبار، يجب أن تكون قادرا على توصيل كابل " Earth "، وإلا فإن جهاز " Earth " سوف يمنع الجهاز وسيتوقف
+                عمل الجهاز. من خلال إزالة العلامة ، يمكن تعطيلها عن طريق " Earth "، ولكن هذا يمكن أن يؤدي إلى مخاطر
+                نفسیة و جسمیة أثناء الاختبار، والتي، كما ظهر في الرسالة، فلاتكون شرکة وبکو مسؤولةعنه .
+                /
+                في قسم ""Switches" "، يمكن تشغیل مفاتيح الأجهزة الرئيسية للجهاز أو إلغاء تنشيطه. المفتاح 1 مخصص لجهود
+                وتيارات الخرج للمجموعة A. يرتبط التبديل 2 بالفلتاج و التيارات الخارجیة وإخراج المجموعة B و VDC. و فی
+                حالة عطل کل مفتاح ، سيتم تعطيل جميع مخرجات هذا التبديل.
+                /
+                في قسم " Combination Cable "، إذا تم تحديد خيار الجهد Voltage ، فإن مخرجات كابلات النوتریک ستتضمن ثلاث
+                مراحل من التدفق وثلاثة مراحل الجهد. ولكن إذا تم تحديد خيار " Current "، فإن إخراج الكابل سيحتوي على
+                مجموعتين من البث ثلاثي الطور، والذي يمكن استخدامه للاختبارات مثل الاختبار التفاضلي.
+                /
+                یتم استخدام خیار Open VDC Setting لتشغیل مخرج جهد DC فی الجهاز. مع النقر علی هذا الخیار یفتح صفحة VDC
+                Diagrams". فی هذه الصفحة و فی قسم Apply فی DC Value یتم تحدید کمیة DC لمخرج هذا المنفذ. هذه الکمیة قابلا
+                للاعداد حتی الحد الاکثر من 212 فولط DC. مع النقر علی خیار Apply و منفذ"AUX DC" یتم حقن کمیة مدخرة فی
+                منفذ "DC Value. يؤدي النقر فوق "Disable DC " إلى تعطيل إخراج "AUX DC". مع تشغیل خیار"Record Period فی
+                المنفذ الامامی یتم تسجیل وقت کحدد لتسجیل اشارة خروج هذا المنفذ .
+                /
+                يعرض قسم " Now Value " مقدار التدفق والجهد الذي ينتج منفذ AUX DC. يظهر حقل ""Max Current" " أيضا أقصى
+                درجات التدفق المستمدة من هذا المنفذ. في اثنين من الرسوم البيانية أدناه، تظهر قيم الجهد والتدفق لهذا
+                المنفذ. يمكن النقر فوق خيار ""Export Report" " أيضا حفظ الإعدادات في هذه الصفحة كملف "PDF". بالنقر فوق "
+                Reset Max Current" "، تكون قيمة التدفق الموضحة في قسم ""Max Current" " لعرض وتحديث " Reset ".
+                /
+                من خلال تحديد خيار " Dancing Light" "، يتم تشغيل مصابيح "LED" على الجزء الأمامي من الجهاز. هذا لاختبار
+                صحة المدخلات الثنائية "LED" للجهاز.
+                /
+            </Search>
+        </contant>
+
+    </Root>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="asset/JS/jquery.js"></script>
+    <script src="asset/JS/jquery-2.1.1.min.js"></script>
+    <script src="asset/JS/bootstrap.min.js"></script>
+    <script src="asset/JS/popper.js"></script>
+    <script src="asset/JS/jquery_resizable_RTL.js"></script>
+    <script src="asset/JS/jsResize_RTL_V1.0.js"></script>
+    <script src="asset/JS/jsfileV1.0.js"></script>
+    <script src="asset/JS/jspdf.umd.min.js"></script>
+</body>
+
+</html>
+
+<!-- @font-face {
+    font-family: aljazirear;
+    src: url(asset/Fonts/droid_arabic_naskh/DroidNaskh-Regular.ttf);
+}
+
+body {
+    font-family: aljazirear;
+} -->

@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Robot;
+    src: url("../Fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
+
+.fass {
+    color: #bbff04bf!important;
+}
+
+.videoPlayer {
+    position: absolute !important;
+    background-color: #279d8f !important;
+    width: 4rem !important;
+    height: 4rem !important;
+    top: 0.3rem !important;
+    border-radius: 50% !important;
+    box-shadow: 2px 1px 2px #08080854;
+    text-shadow: 2px 1px 2px #08080854;
+}
+
+.fass {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+    font-size: 2.2rem;
+}
+
+
+/* Scroll 2 */
+
+.sc2::-webkit-scrollbar {
+    width: 8px;
+    height: 60px;
+}
+
+.sc2::-webkit-scrollbar-track {
+    background-color: rgb(47 46 46 / 20%);
+    border-radius: 10px;
+}
+
+.sc2::-webkit-scrollbar-thumb {
+    background-color: #05806e;
+    border-radius: 10px;
+}
+
+h2.Card-titel {
+    font-size: 20px!important;
+    font-family: 'Robot' !important;
+    text-decoration: none !important;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.596);
+    color: #fff;
+    direction: ltr !important;
+    background: radial-gradient(circle, rgba(37, 86, 115, 1) 20%, rgba(21, 91, 124, 1) 48%, rgba(41, 133, 144, 1) 78%, rgba(39, 157, 143, 1) 94%);
+    position: relative !important;
+}
+
+.float-right {
+    font-family: "Robot"!important;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    padding: 5px;
+    background-color: #13547A;
+    float: right;
+    color: #fff;
+}
+
+h2>a {
+    cursor: default !important;
+    text-decoration: none !important;
+    color: #fff;
+    font-family: "Robot"!important;
+    direction: ltr !important;
+}
+
+h2>a:hover {
+    color: #fff!important;
+}
+
+div.Card {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+p.card-panel {
+    margin-top: 10px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+    margin-left: 1rem !important;
+    margin-right: 0.5rem !important;
+}
+
+div.card-panel {
+    margin-top: 10px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+    margin-left: 1rem !important;
+    margin-right: 0.5rem !important;
+}
+
+p * {
+    color: black;
+}
+
+p.card-text {
+    direction: ltr !important;
+    font-size: 20px;
+    border-bottom: 2px solid linear-gradient(54deg, rgba(19, 84, 122, 1) 44%, rgba(128, 208, 199, 1) 92%);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.596);
+    color: #fff;
+    font-family: "Robot"!important;
+}
+
+#toTop {
+    z-index: 1000;
+}
+
+.fass {
+    color: white;
+}
+
+.fass:hover {
+    color: rgb(4, 201, 245);
+}
+
+body {
+    font-family: "Robot" !important;
+}
+
+p.card-panel * {
+    color: black;
+}
+
+p>a :hover {
+    color: black;
+    text-decoration: none !important;
+}
+
+@media (max-width:950px) {
+    p.card-text {
+        font-size: 1.3rem!important;
+    }
+    div.card-panel {
+        font-size: 1.3rem!important;
+    }
+    h2.Card-titel {
+        font-size: 1.3rem!important;
+    }
+    span .margin {
+        font-size: 1.3rem!important;
+    }
+}
+
+@media (max-width:600px) {
+    p.card-text {
+        font-size: 15px!important;
+    }
+    div.card-panel {
+        font-size: 15px!important;
+    }
+    h2.Card-titel {
+        font-size: 15px!important;
+    }
+    span .margin {
+        font-size: 15px!important;
+    }
+    .videoPlayer {
+        position: relative !important;
+        background-color: #568BB8 !important;
+    }
+    .fass {
+        position: relative !important;
+        right: 0 !important;
+        top: 0!important;
+        font-size: 20px;
+        width: 0 !important;
+        height: 0 !important;
+        top: 0 !important;
+        border-radius: 50% !important;
+        box-shadow: 2px 1px 2px #08080800;
+        text-shadow: 2px 1px 2px #08080800;
+        background-color: #279d8f00 !important;
+    }
+}
+
+@media (max-width:450px) {
+    span .float-right {
+        margin-top: 25px !important;
+    }
+}
+
+
+/* datepicker css */
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+#dateofbirth {
+    border: 1px solid #343434;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 190px;
+    margin-right: 40%;
+    color: black;
+}

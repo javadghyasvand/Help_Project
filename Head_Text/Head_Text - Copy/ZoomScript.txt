@@ -1,0 +1,42 @@
+
+  <script src="~/asset/JS/jquery-2.1.1.min.js"></script>
+  <script src="~/asset/JS/jquery.highlight.js"></script>
+  <script src="~/asset/JS/jquery.scrollto.js"></script>
+  <script src="~/asset/JS/jquery.finder.js"></script>
+  <script src="~/asset/JS/bootstrap.min.js"></script>
+  <script src="~/asset/JS/zooming.js"></script>
+  <script src="~/asset/JS/Defult_page_Js.js"></script>
+
+ <script>
+    const defaultZooming = new Zooming()
+    const customZooming = new Zooming()
+    const config = customZooming.config()
+    const TRANSITION_DURATION_DEFAULT = config.transitionDuration
+    const BG_COLOR_DEFAULT = config.bgColor
+    const SCALE_BASE_DEFAULT = config.scaleBase
+    const ACTIVE_CLASS = 'button-primary'
+    const btnScaleSmall = document.getElementById('btn-scale-small')
+    document.addEventListener('DOMContentLoaded', function () {
+      defaultZooming.listen('img')
+      customZooming.listen('img2')
+    })
+
+    function isActive(el) {
+      return el.classList.contains(ACTIVE_CLASS)
+    }
+    function activate(el) {
+      el.classList.add(ACTIVE_CLASS)
+    }
+    function deactivate(el) {
+      el.classList.remove(ACTIVE_CLASS)
+    }
+    function toggleActive(el) {
+      if (isActive(el)) {
+        deactivate(el)
+        return false
+      } else {
+        activate(el)
+        return true
+      }
+    }
+  </script>

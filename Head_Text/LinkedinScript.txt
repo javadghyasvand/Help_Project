@@ -1,0 +1,45 @@
+
+            <script src="../../../../asset/JS/jquery-2.1.1.min.js"></script>
+            <script src="../../../../asset/JS/jquery.highlight.js"></script>
+            <script src="../../../../asset/JS/jquery.scrollto.js"></script>
+            <script src="../../../../asset/JS/jquery.finder.js"></script>
+            <script src="../../../../asset/JS/bootstrap.min.js"></script>
+            <script src="../../../../asset/JS/Defult_page_Js.js"></script>
+            <script>
+                function isActive(el) {
+                    return el.classList.contains(ACTIVE_CLASS)
+                }
+                function activate(el) {
+                    el.classList.add(ACTIVE_CLASS)
+                }
+                function deactivate(el) {
+                    el.classList.remove(ACTIVE_CLASS)
+                }
+                function toggleActive(el) {
+                    if (isActive(el)) {
+                        deactivate(el)
+                        return false
+                    } else {
+                        activate(el)
+                        return true
+                    }
+                }
+           $(document).ready(function () {
+                   
+                    $(".MsoHyperlink").each(function (index, value) {
+                        result = $(value).text()
+                        if ((result.replace(/^\s+|\s+$/g, "").length != 0)){
+                               $(value).addClass("Hyperlink_Test");
+                            $(value).attr("href", result);
+                        $(value).attr("target", "_blank");
+                        $(value).text("Open in linkedin");
+                        }
+                    });
+                });
+                $(".MsoHyperlink").click(function (e) {   
+                    var href =$(this).attr("href");  
+                    window.open( href, '_blank');
+                });
+            </script>
+    </div>
+</body>
