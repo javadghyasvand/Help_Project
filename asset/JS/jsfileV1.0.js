@@ -1,5 +1,5 @@
 // Menu List Open Cloase  
-$('#tabfigure .sub-menu > a').click(function () {
+$('#tabfigure .sub-menu > a').click(function() {
     var last = $('.sub-menu.open', $('#sidebar'));
     last.removeClass("open");
     $('.arrow', last).removeClass("open");
@@ -20,7 +20,7 @@ $('#tabfigure .sub-menu > a').click(function () {
     }
 });
 // content list show hide
-$('#Tab_selection').change(function () {
+$('#Tab_selection').change(function() {
     $("#searchbox").val("");
     switch ($(this).val()) {
         case "Tester":
@@ -63,7 +63,7 @@ $('#Tab_selection').change(function () {
     }
 });
 // whats new sort
-$("#wathsnew_dropdown").change(function (e) {
+$("#wathsnew_dropdown").change(function(e) {
     $("#searchbox").val("");
     $("#contant-Tester").addClass("none-display");
     $("#contant-Relay").addClass("none-display");
@@ -88,7 +88,7 @@ $("#wathsnew_dropdown").change(function (e) {
 });
 
 // Linkedin new sort
-$("#Linkedin_dropdown").change(function (e) {
+$("#Linkedin_dropdown").change(function(e) {
     $("#searchbox").val("");
     $("#contant-Tester").addClass("none-display");
     $("#contant-Relay").addClass("none-display");
@@ -113,7 +113,7 @@ $("#Linkedin_dropdown").change(function (e) {
     }
 });
 // colapse sidbar
-$("#Btn-Col-Sidebar").click(function (e) {
+$("#Btn-Col-Sidebar").click(function(e) {
     Sidbar_Steate();
 });
 // Download Manual
@@ -201,7 +201,7 @@ function downloadFile_Work_Order() {
     }
 }
 // select languge
-$("#lang_Help").change(function (e) {
+$("#lang_Help").change(function(e) {
     $("#searchbox").val("");
     let FullLocation = $("#curentpage").attr("name");
     if (FullLocation.search("page") <= 0) {
@@ -280,7 +280,7 @@ function SearchFunction() {
         $('ul.sub').css("display", "none");
         $('img[src="asset/Image/Open_Book.png"]').attr("src", "asset/Image/Close_Book.png");
         $('li.sub-menu>a').css("display", "block");
-        $("li > a.newpage").each(function (index, value) {
+        $("li > a.newpage").each(function(index, value) {
             currentName = $(value).text()
             currentName.trim()
             $("a.newpage").removeClass("li_select");
@@ -290,7 +290,7 @@ function SearchFunction() {
                 $(value).hide();
             }
         });
-        $("li.sub-menu").each(function (index, value) {
+        $("li.sub-menu").each(function(index, value) {
             currentName = $(value).text()
             currentName.trim();
             if (currentName.toUpperCase().indexOf(searchString.toUpperCase()) > -1) {
@@ -331,8 +331,8 @@ function SearchFunction() {
 }
 
 
-$(document).ready(function () {
-    $('.newpage').click(function (e) {
+$(document).ready(function() {
+    $('.newpage').click(function(e) {
         var url = $(this).attr("name");
         var Pages = url.search("WhatsNew_VR");
         var width_screen = window.screen.width
@@ -376,7 +376,7 @@ $(document).ready(function () {
     });
 });
 // onload page
-$(window).on("load", function () {
+$(window).on("load", function() {
 
 
     var lastquery = window.document.location.href
@@ -399,6 +399,36 @@ $(window).on("load", function () {
 
             } else {
                 var existetag = document.getElementById(id[1]);
+            }
+        } else if (stringqery_arry_dirctory_call[1] == "WhatsNew_DA") {
+            var splitqury = stringqery.split("page=");
+            var idinstrinquery = stringqery.split("\\");
+            var id = idinstrinquery[3] + "_DA"
+            if (id == "") {
+                var sub_menu_Id = id[0].substring(4);
+                sub_menu_Id = sub_menu_Id.substring(0, sub_menu_Id.length - 4);
+                sub_menu_Id = sub_menu_Id + "-sub-menu";
+                sub_menu_Id = sub_menu_Id.replace("_", " ");
+                var existetag = document.getElementById(sub_menu_Id);
+                0
+
+            } else {
+                var existetag = document.getElementById(id);
+            }
+
+        } else if (stringqery_arry_dirctory_call[1] == "AMT105") {
+            var splitqury = stringqery.split("page=");
+            var idinstrinquery = stringqery.split("\\");
+            var id = idinstrinquery[3] + idinstrinquery[1]
+            if (id[1] == "") {
+                var sub_menu_Id = id[0].substring(4);
+                sub_menu_Id = sub_menu_Id.substring(0, sub_menu_Id.length - 4);
+                sub_menu_Id = sub_menu_Id + "-sub-menu";
+                sub_menu_Id = sub_menu_Id.replace("_", " ");
+                var existetag = document.getElementById(sub_menu_Id);
+
+            } else {
+                var existetag = document.getElementById(id);
             }
         } else if (stringqery_arry_dirctory_call[1] == "AMT205") {
             var splitqury = stringqery.split("page=");
@@ -700,12 +730,12 @@ function dispalyContanet(element) {
         }
     } else {
         $("option[value=" + element + "]").attr("selected", "selected");
-        if(element.indexOf("Tester") != "-1"){
+        if (element.indexOf("Tester") != "-1") {
             $("option[value=Tester]").attr("selected", "selected");
 
-        }else if(element.indexOf("Relay") != "-1"){
+        } else if (element.indexOf("Relay") != "-1") {
             $("option[value=Relay]").attr("selected", "selected");
-        }else{
+        } else {
             $("option[value=WorkOrder]").attr("selected", "selected");
         }
         $("#wathsnew_dropdown").addClass("none-display");
@@ -714,6 +744,7 @@ function dispalyContanet(element) {
 
 
 }
+
 function page_iframe_display(existetag, content) {
     var width_screen = window.screen.width
     if (width_screen <= "750") {
@@ -772,7 +803,7 @@ function search_value(valu_sender, searchString) {
         $("ul.sub").css("display", "none");
         $('img[src="asset/Image/Open_Book.png"]').attr("src", "asset/Image/Close_Book.png");
         $("a.li_select").removeClass("li_select");
-        $("#" + valu_sender + ">contant>Search").each(function (index, value) {
+        $("#" + valu_sender + ">contant>Search").each(function(index, value) {
             currentName = $(value).text()
             if (currentName.toUpperCase().search(searchString.toUpperCase()) != "-1") {
                 var id = $(value).attr("id");
@@ -799,7 +830,7 @@ function search_value(valu_sender, searchString) {
         $("ul.sub").css("display", "none");
         $('img[src="asset/Image/Open_Book.png"]').attr("src", "asset/Image/Close_Book.png");
         $("a.li_select").removeClass("li_select");
-        $("#" + valu_sender + ">contant").each(function (index, value) {
+        $("#" + valu_sender + ">contant").each(function(index, value) {
             currentName = $(value).text()
             if (currentName.toUpperCase().search(searchString.toUpperCase()) != "-1") {
                 var id = $(value).attr("id");
